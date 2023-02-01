@@ -1,13 +1,13 @@
 {
-  "name": "boilerplate",
+  "name": "Villa design",
   "version": "1.0.0",
-  "description": "This is a boilerplate",
+  "description": "This is design of our website",
   "scripts": {
     "start": "rm -rf dev-serve && parcel src/index.html --dist-dir dev-serve",
     "build": "rm -rf build && parcel build src/index.html --dist-dir build --public-url ./",
     "publish": "gh-pages -d build"
   },
-  "author": "dci",
+  "author": "Pecu Irina Fazan",
   "license": "ISC",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.7.0",
