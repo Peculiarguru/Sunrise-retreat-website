@@ -4,15 +4,258 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/main.scss" />
-    <script
-      src="https://kit.fontawesome.com/c7478477cf.js"
-      crossorigin="anonymous"
-    ></script>
-    <title>Villa design</title>
-    <link rel="stylesheet" href="./styles/main.css" />
+
+    <title>Villa website</title>
   </head>
   <body>
-    <div class="footer-container">
+    <article class="grid-container">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid navItems">
+          <div class="logo">
+            <img
+              src="./styles/Images/Rose_Gold_Photography_Circle_Logo__2_-removebg-preview.png"
+              alt=""
+            />
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#">Surf</a>
+              <a class="nav-link" href="#">Yoga</a>
+              <a class="nav-link" href="#">Food</a>
+              <a class="nav-link" href="#">Contact</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <header>
+        <section class="slideImg">
+          <div
+            id="carouselExampleInterval"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img
+                  src="./styles/Images/jonathan-borba-zh8M3cvvtmY-unsplash.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+
+              <div class="carousel-item" data-bs-interval="2000">
+                <img
+                  src="./styles/Images/pexels-kimberly-mcneilus-2480608.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+
+              <div class="carousel-item">
+                <img
+                  src="./styles/Images/pexels-michael-block-3225531.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleInterval"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleInterval"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </section>
+      </header>
+
+      <main>
+        <div class="reserveBooking">
+          <button>MAKE RESERVATION</button>
+        </div>
+        <section class="banner">
+          <div class="exploreAdventure container row">
+            <div
+              class="exploreAdventureText col-12 col-md-6 d-flex flex-column mb-3 justify-content-center align-items-center"
+            >
+              <h2>find more</h2>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro,
+                ipsam.
+              </p>
+              <button class="mb-3">Explore more</button>
+            </div>
+            <div class="exploreAdventureImg col-12 col-md-6">
+              <img src="../Images/donut2.png" alt="nature img" />
+            </div>
+          </div>
+        </section>
+
+        <div class="centerContainer">
+          <section class="whatWeDo mt-3">
+            <div class="surfservice services mb-3 p-3">
+              <h3>discover</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit
+                dolor illo perferendis incidunt? Qui, consectetur! Explicabo vel
+                obcaecati vitae eius nesciunt ducimus quas dolorem, dolore
+              </p>
+              <button>see more</button>
+            </div>
+
+            <div class="yogaservice services mb-3 p-3">
+              <h3>discover</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit
+                dolor illo perferendis incidunt? Qui, consectetur! Explicabo vel
+                obcaecati vitae eius nesciunt ducimus quas dolorem, dolore
+              </p>
+              <button>see more</button>
+            </div>
+
+            <div class="foodservice services mb-3 p-3">
+              <h3>discover</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit
+                dolor illo perferendis incidunt? Qui, consectetur! Explicabo vel
+                obcaecati vitae eius nesciunt ducimus quas dolorem, dolore
+              </p>
+              <button>see more</button>
+            </div>
+          </section>
+        </div>
+
+        <section class="tourAround">
+          <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="./styles/Images/jonathan-borba-zh8M3cvvtmY-unsplash.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>First slide label</h5>
+                  <p>
+                    Some representative placeholder content for the first slide.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../Images/donut1.png"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Second slide label</h5>
+                  <p>
+                    Some representative placeholder content for the second
+                    slide.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../Images/donut1.png"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>
+                    Some representative placeholder content for the third slide.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </section>
+
+        <section class="gallary">
+          <div class="img1"></div>
+        </section>
+      </main>
+
+      <footer>
+     <div class="footer-container">
       <img
         src="/images.jpeg"
         alt=""
@@ -162,7 +405,16 @@
           <a href="">Social</a>
         </div>
         <p>Copyright &copy; 2023 Awesome Villa</p>
-      </div>
-    </footer>
+      </footer>
+    </article>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+
+  
+
   </body>
 </html>
