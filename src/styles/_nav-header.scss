@@ -3,13 +3,19 @@
   overflow: hidden;
   top: 0;
   width: 100%;
-  z-index: 3;
-  background-color: #dde5ba;
+  z-index: 5;
+  color: white;
+  padding: 20px;
 
   .logo {
     img {
-      width: 100px;
+      width: 50px;
     }
+  }
+}
+header {
+  .d-block {
+    height: 392px;
   }
 }
 

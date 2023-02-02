@@ -6,128 +6,120 @@
   gap: 5px;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 300px 1fr 300px;
-  grid-template-areas: "header" "main" "footer";
+// .grid-container {
+//   header {
+//     .d-block {
+//       height: 316px;
+//       object-position: center;
+//     }
+//   }
+//   main {
+//     background-color: blanchedalmond;
+//     .reserveBooking {
+//       position: absolute;
+//       left: 25%;
+//     }
+//     .banner {
+//       margin-top: 40px;
+//       .exploreAdventure {
+//         background-color: rgb(242, 228, 228);
+//         display: flex;
+//         justify-content: center;
+//         margin: 0 auto;
+//         img {
+//           width: 100%;
+//           height: 250px;
+//         }
+//       }
+//     }
+//     .centerContainer {
+//       display: flex;
+//       justify-content: center;
+//     }
 
-  header {
-    grid-area: header;
-    .d-block {
-      height: 316px;
-      object-position: center;
-    }
-  }
-  main {
-    grid-area: main;
-    background-color: blanchedalmond;
-    .reserveBooking {
-      position: absolute;
-      left: 25%;
-    }
-    .banner {
-      margin-top: 40px;
-      .exploreAdventure {
-        background-color: rgb(242, 228, 228);
-        display: flex;
-        justify-content: center;
-        margin: 0 auto;
-        img {
-          width: 100%;
-          height: 250px;
-        }
-      }
-    }
-    .centerContainer {
-      display: flex;
-      justify-content: center;
-    }
+//     .services {
+//       background-image: url(../images/images.jpeg);
+//       display: flex;
+//       justify-content: center;
+//       flex-direction: column;
+//       align-items: center;
+//     }
+//   }
+//   footer {
+//   }
+// }
 
-    .services {
-      background-image: url(../images/donut.png);
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      align-items: center;
-    }
-  }
-  footer {
-    grid-area: footer;
-  }
-}
+// main {
+// }
+// @media all and (min-width: 375px) and (max-width: 425px) {
+//   .grid-container {
+//     header {
+//       .d-block {
+//         height: 00px;
+//       }
+//     }
 
-main {
-}
-@media all and (min-width: 375px) and (max-width: 425px) {
-  .grid-container {
-    header {
-      .d-block {
-        height: 00px;
-      }
-    }
+//     main {
+//       .reserveBooking {
+//       }
+//     }
+//   }
+// }
 
-    main {
-      .reserveBooking {
-      }
-    }
-  }
-}
+// @media all and (min-width: 768px) and (max-width: 1024px) {
+//   .grid-container {
+//     header {
+//       .d-block {
+//         height: 310px;
+//       }
+//     }
 
-@media all and (min-width: 768px) and (max-width: 1024px) {
-  .grid-container {
-    header {
-      .d-block {
-        height: 310px;
-      }
-    }
+// //     main {
+// //       .whatWeDo {
+// //         @include grid-style;
+// //         .surfservice {
+// //           grid-area: surfService;
+// //         }
+// //         .yogaservice {
+// //           grid-area: yogaService;
+// //         }
+// //         .foodservice {
+// //           grid-area: foodService;
+// //         }
+// //       }
+// //     }
+// //   }
+// // }
 
-    main {
-      .whatWeDo {
-        @include grid-style;
-        .surfservice {
-          grid-area: surfService;
-        }
-        .yogaservice {
-          grid-area: yogaService;
-        }
-        .foodservice {
-          grid-area: foodService;
-        }
-      }
-    }
-  }
-}
+// // @media all and (min-width: 1024px) {
+// //   .grid-container {
+// //     header {
+// //       .d-block {
+// //         height: 429px;
+// //       }
+// //     }
 
-@media all and (min-width: 1024px) {
-  .grid-container {
-    header {
-      .d-block {
-        height: 429px;
-      }
-    }
-
-    main {
-      .banner {
-        margin-top: 100px;
-      }
-      .reserveBooking {
-        position: sticky;
-        left: 50%;
-        top: 100px;
-      }
-      .whatWeDo {
-        @include grid-style;
-        .surfservice {
-          grid-area: surfService;
-        }
-        .yogaservice {
-          grid-area: yogaService;
-        }
-        .foodservice {
-          grid-area: foodService;
-        }
-      }
-    }
-  }
-}
+// //     main {
+// //       .banner {
+// //         margin-top: 100px;
+// //       }
+// //       .reserveBooking {
+// //         position: sticky;
+// //         left: 50%;
+// //         top: 100px;
+// //       }
+// //       .whatWeDo {
+// //         @include grid-style;
+// //         .surfservice {
+// //           grid-area: surfService;
+// //         }
+// //         .yogaservice {
+// //           grid-area: yogaService;
+// //         }
+// //         .foodservice {
+// //           grid-area: foodService;
+// //         }
+// //       }
+// //     }
+// //   }
+// // }

@@ -4,44 +4,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/main.scss" />
-
     <title>Villa website</title>
   </head>
   <body>
-    <article class="grid-container">
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid navItems">
-          <div class="logo">
-            <img
-              src="./images/Rose_Gold_Photography_Circle_Logo__2_-removebg-preview.png"
-              alt=""
-            />
-          </div>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-              <a class="nav-link" href="#">About</a>
-              <a class="nav-link" href="#">Surf</a>
-              <a class="nav-link" href="#">Yoga</a>
-              <a class="nav-link" href="#">Food</a>
-              <a class="nav-link" href="#">Contact</a>
+    <article class="container-fluid">
+      <!-- navbar section -->
+      <section class="row">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <div class="logo">
+              <img src="./images/Logo_light.png" alt="logo" />
+            </div>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Surf</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Yoga</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Food</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  Search
+                </button>
+              </form>
             </div>
           </div>
-        </div>
-      </nav>
-      <header>
-        <section class="slideImg">
+        </nav>
+      </section>
+      <!-- end of navbar -->
+
+      <!-- header section -->
+      <header class="row">
+        <section class="col-12">
           <div
             id="carouselExampleInterval"
             class="carousel slide"
@@ -49,24 +76,15 @@
           >
             <div class="carousel-inner">
               <div class="carousel-item active" data-bs-interval="10000">
-                <img
-                  src="./images/jonathan-borba-zh8M3cvvtmY-unsplash.jpg"
-                  class="d-block w-100"
-                />
+                <img src="./images/surf picture.jpg" class="d-block w-100" />
               </div>
 
               <div class="carousel-item" data-bs-interval="2000">
-                <img
-                  src="./images/pexels-kimberly-mcneilus-2480608.jpg"
-                  class="d-block w-100"
-                />
+                <img src="./images/header4.jpg" class="d-block w-100" />
               </div>
 
               <div class="carousel-item">
-                <img
-                  src="./images/pexels-michael-block-3225531.jpg"
-                  class="d-block w-100"
-                />
+                <img src="./images/header_3.jpg" class="d-block w-100" />
               </div>
             </div>
             <button
@@ -97,7 +115,7 @@
         </section>
       </header>
 
-      <main>
+      <!-- <main>
         <div class="reserveBooking">
           <button>MAKE RESERVATION</button>
         </div>
@@ -249,11 +267,11 @@
         <section class="gallary">
           <div class="img1"></div>
         </section>
-      </main>
-
+      </main> -->
+      <!-- 
       <footer>
-     <div class="footer-container">
-      <img
+     <div class="footer-container"> -->
+      <!-- <img
         src="/images.jpeg"
         alt=""
         class="footer-photo"
@@ -323,9 +341,9 @@
         width="300px"
         height="300px"
       />
-    </div>
+    </div> -->
 
-    <footer>
+      <!-- <footer>
       <div class="row primary">
         <div class="column about">
           <h3>AWESOME VILLA</h3>
@@ -403,15 +421,12 @@
         </div>
         <p>Copyright &copy; 2023 Awesome Villa</p>
       </footer>
-    </article>
+    --></article>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
-
-  
-
   </body>
 </html>
