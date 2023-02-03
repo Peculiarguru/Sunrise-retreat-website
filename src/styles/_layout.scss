@@ -18,7 +18,7 @@
 }
 @mixin link {
   text-decoration: none;
-  color: beige;
+  color: #abb557;
 }
 
 main {
@@ -46,11 +46,16 @@ main {
     flex-direction: column;
     align-items: center;
   }
+ 
   .btn {
     background-color: #abb557;
-    a {
-      @include link;
-    }
+    color: whitesmoke;
+    border: none;
+  }
+
+  .btn:hover {
+    background-color: white;
+    color:#abb557
   }
   .surfService {
     background-image: url(../images/servicebg3.jpg);
