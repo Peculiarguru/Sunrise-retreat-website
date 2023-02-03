@@ -3,10 +3,15 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-@mixin flexContainer {
+@mixin flexColumnCenter {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  align-items: center;
+}
+@mixin flexRowCenter {
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 @mixin link {
@@ -19,6 +24,55 @@
   grid-template-rows: repeat(2, 300px);
   grid-template-areas: "surfService yogaService" "surfService foodService";
   gap: 10px;
+}
+$textColor: #abb557;
+@mixin animationStyle {
+  .animation {
+    animation: text-animation 8s infinite;
+    font-family: "Montserrat", sans-serif;
+  }
+  .first {
+    background-color: chocolate;
+  }
+  .second {
+    background-color: #abb557;
+  }
+  .third {
+    background-color: rgb(244, 181, 135);
+  }
+
+  @keyframes text-animation {
+    0% {
+      margin-top: 0;
+    }
+    10% {
+      margin-top: 0;
+    }
+    20% {
+      margin-top: -66px;
+    }
+    30% {
+      margin-top: -66px;
+    }
+    40% {
+      margin-top: -132px;
+    }
+    60% {
+      margin-top: -132px;
+    }
+    70% {
+      margin-top: -66px;
+    }
+    80% {
+      margin-top: -66px;
+    }
+    90% {
+      margin-top: 0;
+    }
+    100% {
+      margin-top: 0;
+    }
+  }
 }
 
 main {
@@ -38,9 +92,32 @@ main {
     padding-bottom: 30px;
   }
   .reserveBooking {
-    @include flexContainer();
-    margin-top: 20px;
+    @include flexRowCenter();
+    height: 50px;
+    overflow: hidden;
+    margin: 50px;
+    .animationContainer {
+      height: 50px;
+      .animation {
+        overflow: hidden;
+        margin-left: 20px;
+        height: 500px;
+        h4 {
+          font-size: 1rem;
+        }
+      }
+      .animation > div > div {
+        margin-bottom: 1rem;
+        height: 50px;
+        width: 200px;
+        color: white;
+        font-size: 1.3rem;
+        @include flexColumnCenter();
+      }
+      @include animationStyle;
+    }
   }
+
   .services {
     display: flex;
     justify-content: center;
@@ -48,6 +125,7 @@ main {
     align-items: center;
     color: white;
     font-family: "Montserrat", sans-serif;
+    position: relative;
   }
 
   .btn {
@@ -63,7 +141,7 @@ main {
 
   .btn a:hover {
     background-color: white;
-    color: #abb557;
+    color: $textColor;
   }
   .surfService {
     background-image: url(../images/servicebg3.jpg);
