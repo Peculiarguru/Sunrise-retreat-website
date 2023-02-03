@@ -5,7 +5,6 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-@import url("https://fonts.googleapis.com/css2?family=Chivo+Mono&family=Fira+Sans+Condensed:wght@100&family=Jura&family=Lato:wght@300&family=Lobster&family=Maven+Pro&family=Monoton&family=Pacifico&family=Poller+One&family=Poppins:wght@300;400&family=Roboto+Condensed&family=Roboto+Slab:wght@500&family=Roboto:ital,wght@0,500;1,400&family=Rubik+Gemstones&family=Rubik+Spray+Paint&display=swap");
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -10929,55 +10928,111 @@ textarea.form-control-lg {
   top: 0;
   width: 100%;
   z-index: 5;
-  color: white;
   padding: 20px;
 }
 .navbar .logo img {
-  width: 50px;
+  width: 60px;
+}
+.navbar .nav-item {
+  margin-left: 20px;
+}
+.navbar .nav-item .nav-link:hover {
+  -webkit-text-decoration: overline 4px #bed558;
+          text-decoration: overline 4px #bed558;
+  color: beige;
+  transition: margin 1s;
 }
 
+@media screen and (max-width: 768px) {
+  .nav-item {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .nav-item {
+    font-size: 1.5rem;
+  }
+}
 header .d-block {
   height: 392px;
 }
 
-.social i {
-  color: #bac6d9;
-  transition: transform 0.6s ease-in-out;
-}
-
-.social i:hover {
-  color: gray;
-  transform: translate3d(0, -10px, 0);
+main .booking {
+  height: 50px;
+  border: none;
+  color: #fff;
+  background: #abb557;
   cursor: pointer;
 }
-
-.copyright {
-  padding: 0.3em 1em;
-  background-color: #25262e;
+main .banner {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  background-color: #f1f4db;
+  padding-bottom: 30px;
 }
-
-.footer-menu {
-  float: left;
-  margin-top: 10px;
+main .reserveBooking {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
 }
-
-.footer-menu a {
-  color: #cfd2d6;
-  padding: 6px;
+main .services {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+main .btn {
+  background-color: #abb557;
+}
+main .btn a {
   text-decoration: none;
+  color: beige;
+}
+main .surfService {
+  background-image: url(../images/servicebg3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main .yogaService {
+  background-image: url(../images/yoga2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main .foodService {
+  background-image: url(../images/servicebg2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main video {
+  height: 250px;
 }
 
-.footer-menu a:hover {
-  color: white;
-}
-
-.copyright p {
-  font-size: 0.9em;
-  text-align: right;
-}
-
-@media screen and (max-width: 850px) {
-  .row.primary {
-    grid-template-columns: 1fr;
+@media screen and (min-width: 768px) {
+  .whatWeDo {
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    grid-template-rows: repeat(2, 300px);
+    grid-template-areas: "surfService yogaService" "surfService foodService";
+    gap: 10px;
+  }
+  .whatWeDo .surfService {
+    grid-area: surfService;
+  }
+  .whatWeDo .yogaService {
+    grid-area: yogaService;
+    margin-bottom: 0 !important;
+  }
+  .whatWeDo .foodService {
+    grid-area: foodService;
+  }
+  video {
+    height: 250px;
+    width: 100%;
   }
 }/*# sourceMappingURL=main.css.map */

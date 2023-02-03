@@ -1,125 +1,94 @@
 @mixin grid-style {
   display: grid;
   grid-template-columns: repeat(2, 300px);
-  grid-template-rows: (3, 300px);
+  grid-template-rows: repeat(2, 300px);
   grid-template-areas: "surfService yogaService" "surfService foodService";
-  gap: 5px;
+  gap: 10px;
+}
+@mixin backgroundStyle {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@mixin flexContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+@mixin link {
+  text-decoration: none;
+  color: beige;
 }
 
-// .grid-container {
-//   header {
-//     .d-block {
-//       height: 316px;
-//       object-position: center;
-//     }
-//   }
-//   main {
-//     background-color: blanchedalmond;
-//     .reserveBooking {
-//       position: absolute;
-//       left: 25%;
-//     }
-//     .banner {
-//       margin-top: 40px;
-//       .exploreAdventure {
-//         background-color: rgb(242, 228, 228);
-//         display: flex;
-//         justify-content: center;
-//         margin: 0 auto;
-//         img {
-//           width: 100%;
-//           height: 250px;
-//         }
-//       }
-//     }
-//     .centerContainer {
-//       display: flex;
-//       justify-content: center;
-//     }
+main {
+  .booking {
+    height: 50px;
+    border: none;
+    color: #fff;
+    background: #abb557;
+    cursor: pointer;
+  }
+  .banner {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    background-color: #f1f4db;
+    padding-bottom: 30px;
+  }
+  .reserveBooking {
+    @include flexContainer();
+    margin-top: 20px;
+  }
+  .services {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .btn {
+    background-color: #abb557;
+    a {
+      @include link;
+    }
+  }
+  .surfService {
+    background-image: url(../images/servicebg3.jpg);
+    @include backgroundStyle;
+  }
+  .yogaService {
+    background-image: url(../images/yoga2.jpg);
+    @include backgroundStyle;
+  }
+  .foodService {
+    background-image: url(../images/servicebg2.jpg);
+    @include backgroundStyle;
+  }
+  video {
+    height: 250px;
+  }
+}
 
-//     .services {
-//       background-image: url(../images/images.jpeg);
-//       display: flex;
-//       justify-content: center;
-//       flex-direction: column;
-//       align-items: center;
-//     }
-//   }
-//   footer {
-//   }
-// }
+@media screen and (min-width: 768px) {
+  .whatWeDo {
+    @include grid-style;
 
-// main {
-// }
-// @media all and (min-width: 375px) and (max-width: 425px) {
-//   .grid-container {
-//     header {
-//       .d-block {
-//         height: 00px;
-//       }
-//     }
+    .surfService {
+      grid-area: surfService;
+    }
+    .yogaService {
+      grid-area: yogaService;
+      margin-bottom: 0 !important;
+    }
+    .foodService {
+      grid-area: foodService;
+    }
+  }
+  video {
+    height: 250px;
+    width: 100%;
+  }
+}
 
-//     main {
-//       .reserveBooking {
-//       }
-//     }
-//   }
-// }
-
-// @media all and (min-width: 768px) and (max-width: 1024px) {
-//   .grid-container {
-//     header {
-//       .d-block {
-//         height: 310px;
-//       }
-//     }
-
-// //     main {
-// //       .whatWeDo {
-// //         @include grid-style;
-// //         .surfservice {
-// //           grid-area: surfService;
-// //         }
-// //         .yogaservice {
-// //           grid-area: yogaService;
-// //         }
-// //         .foodservice {
-// //           grid-area: foodService;
-// //         }
-// //       }
-// //     }
-// //   }
-// // }
-
-// // @media all and (min-width: 1024px) {
-// //   .grid-container {
-// //     header {
-// //       .d-block {
-// //         height: 429px;
-// //       }
-// //     }
-
-// //     main {
-// //       .banner {
-// //         margin-top: 100px;
-// //       }
-// //       .reserveBooking {
-// //         position: sticky;
-// //         left: 50%;
-// //         top: 100px;
-// //       }
-// //       .whatWeDo {
-// //         @include grid-style;
-// //         .surfservice {
-// //           grid-area: surfService;
-// //         }
-// //         .yogaservice {
-// //           grid-area: yogaService;
-// //         }
-// //         .foodservice {
-// //           grid-area: foodService;
-// //         }
-// //       }
-// //     }
-// //   }
-// // }
+@media screen and (min-width: 1024px) {
+}
