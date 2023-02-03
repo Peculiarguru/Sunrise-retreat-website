@@ -12,8 +12,9 @@ footer * {
   border: none;
   outline: none;
   width: 100%;
+  z-index: 2;
 }
-.footer-container {
+.imageContainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -29,6 +30,7 @@ img {
   transition: transform 0.6s ease-in-out;
   border-radius: 5px;
   cursor: pointer;
+  position: relative;
 }
 img:hover {
   opacity: 0.8;
