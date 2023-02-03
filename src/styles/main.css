@@ -10929,6 +10929,7 @@ textarea.form-control-lg {
   width: 100%;
   z-index: 5;
   padding: 20px;
+  background-color: white;
 }
 .navbar .logo img {
   width: 60px;
@@ -10957,6 +10958,9 @@ header .d-block {
   height: 392px;
 }
 
+main {
+  margin-top: 20px;
+}
 main .booking {
   height: 50px;
   border: none;

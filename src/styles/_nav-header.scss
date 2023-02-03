@@ -5,15 +5,29 @@
   width: 100%;
   z-index: 5;
   padding: 10px 0;
-  background-color:chocolate;
+  background-color: chocolate;
   opacity: 0.6;
   .nav-link {
     color: whitesmoke;
   }
-  .nav-item {
-    margin-left: 20px;
+  .logo {
+    img {
+      width: 60px;
+    }
+    padding: 10px 0;
+    background-color: chocolate;
+    opacity: 0.6;
+    .nav-link {
+      color: whitesmoke;
+    }
+    .nav-item {
+      margin-left: 20px;
+    }
   }
- 
+  .navbar-toggler-icon {
+    width: 20px;
+    color: white;
+  }
 }
 .btn {
   background-color: #abb557;
@@ -23,10 +37,9 @@
 
 .btn:hover {
   background-color: white;
-  color:#abb557
+  color: #abb557;
 }
 @media screen and (max-width: 425px) {
-  
   .d-block {
     height: 350px;
   }
@@ -47,4 +60,3 @@
     height: 100vh;
   }
 }
-
