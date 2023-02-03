@@ -3,53 +3,37 @@
   overflow: hidden;
   top: 0;
   width: 100%;
-  z-index: 3;
-  background-color: #dde5ba;
+  z-index: 5;
+
+  padding: 20px;
 
   .logo {
     img {
-      width: 100px;
+      width: 60px;
+    }
+  }
+  .nav-item {
+    margin-left: 20px;
+    .nav-link:hover {
+      text-decoration: overline 4px #bed558;
+      color: beige;
+      transition: margin 1s;
     }
   }
 }
+@media screen and (max-width: 768px) {
+  .nav-item {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .nav-item {
+    font-size: 1.5rem;
+  }
+}
 
-// nav {
-
-//   background-color: #8B9556;
-//   padding: 15px;
-//   display: flex;
-//   justify-content: space-around;
-//   align-items: center;
-//   height: 100px;
-//   ul {
-//       display: flex;
-//       justify-content: space-evenly;
-//       /* there are still padding and marging to be reseted */
-//       margin-bottom: 0;
-//       padding-left: 0;
-//   }
-//   li {
-//       list-style: none;
-//       margin: 15px;
-//   }
-//   a {
-//       text-decoration: none;
-//       color: beige;
-//       transition: margin 1s;
-//   }
-//   li:first-child {
-//       font-weight: bold;
-//   }
-// }
-
-// @media screen and (max-width: 425px) {
-//   nav ul {
-//       display: none;
-//   }
-// }
-
-// nav li a:hover {
-//   text-decoration: overline 4px #BED558;
-//   color: beige;
-//  margin: 20px;
-// }
+header {
+  .d-block {
+    height: 392px;
+  }
+}

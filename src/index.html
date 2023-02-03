@@ -4,44 +4,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/main.scss" />
-
     <title>Villa website</title>
   </head>
   <body>
-    <article class="grid-container">
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid navItems">
-          <div class="logo">
-            <img
-              src="./images/Rose_Gold_Photography_Circle_Logo__2_-removebg-preview.png"
-              alt=""
-            />
-          </div>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-              <a class="nav-link" href="#">About</a>
-              <a class="nav-link" href="#">Surf</a>
-              <a class="nav-link" href="#">Yoga</a>
-              <a class="nav-link" href="#">Food</a>
-              <a class="nav-link" href="#">Contact</a>
+    <article class="container-fluid">
+      <!-- navbar section -->
+      <section class="row">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <div class="logo">
+              <img src="./images/Logo_dark.png" alt="logo" />
+            </div>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Surf</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Yoga</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Food</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  Search
+                </button>
+              </form>
             </div>
           </div>
-        </div>
-      </nav>
-      <header>
-        <section class="slideImg">
+        </nav>
+      </section>
+      <!-- end of navbar -->
+
+      <!-- header section -->
+      <header class="row">
+        <section class="col-12">
           <div
             id="carouselExampleInterval"
             class="carousel slide"
@@ -49,24 +76,15 @@
           >
             <div class="carousel-inner">
               <div class="carousel-item active" data-bs-interval="10000">
-                <img
-                  src="./images/jonathan-borba-zh8M3cvvtmY-unsplash.jpg"
-                  class="d-block w-100"
-                />
+                <img src="./images/surf picture.jpg" class="d-block w-100" />
               </div>
 
               <div class="carousel-item" data-bs-interval="2000">
-                <img
-                  src="./images/pexels-kimberly-mcneilus-2480608.jpg"
-                  class="d-block w-100"
-                />
+                <img src="./images/header4.jpg" class="d-block w-100" />
               </div>
 
               <div class="carousel-item">
-                <img
-                  src="./images/pexels-michael-block-3225531.jpg"
-                  class="d-block w-100"
-                />
+                <img src="./images/header_3.jpg" class="d-block w-100" />
               </div>
             </div>
             <button
@@ -97,12 +115,9 @@
         </section>
       </header>
 
-      <main>
-        <div class="reserveBooking">
-          <button>MAKE RESERVATION</button>
-        </div>
-        <section class="banner">
-          <div class="exploreAdventure container row">
+      <main class="container-fluid">
+        <section class="banner container-fluid">
+          <div class="exploreAdventure row">
             <div
               class="exploreAdventureText col-12 col-md-6 d-flex flex-column mb-3 justify-content-center align-items-center"
             >
@@ -111,139 +126,90 @@
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro,
                 ipsam.
               </p>
-              <button class="mb-3">Explore more</button>
+              <button type="button" class="btn mx-2">
+                <a href="#">Explore more</a>
+              </button>
             </div>
-            <div class="exploreAdventureImg col-12 col-md-6">
+            <div class="col-12 col-md-6">
               <img
-                src="./images/jonathan-borba-zh8M3cvvtmY-unsplash.jpg"
+                src="./images/adventureImg.jpg"
+                class="img-fluid"
                 alt="nature img"
               />
             </div>
           </div>
         </section>
+        <div class="reserveBooking">
+          <h3>OUR PACKAGE/BOOKING</h3>
+          <p style="text-align: center">
+            YOUR STAY AT THE HOUSE OF PEACE VILLA
+          </p>
+        </div>
 
-        <div class="centerContainer">
-          <section class="whatWeDo mt-3">
-            <div class="surfservice services mb-3 p-3">
+        <div
+          class="centerContainer d-flex justify-content-center align-items-center"
+        >
+          <section class="whatWeDo row mt-3">
+            <div class="surfService col-12 services mb-3 p-3">
               <h3>discover</h3>
               <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit
                 dolor illo perferendis incidunt? Qui, consectetur! Explicabo vel
                 obcaecati vitae eius nesciunt ducimus quas dolorem, dolore
               </p>
-              <button>see more</button>
+              <div class="btn-container">
+                <button type="button" class="btn mx-2">
+                  <a href="#">See more</a>
+                </button>
+                <button type="button" class="btn mx-2">
+                  <a href="#">Book now</a>
+                </button>
+              </div>
             </div>
 
-            <div class="yogaservice services mb-3 p-3">
+            <div class="yogaService col-12 services mb-3 p-3">
               <h3>discover</h3>
               <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit
                 dolor illo perferendis incidunt? Qui, consectetur! Explicabo vel
                 obcaecati vitae eius nesciunt ducimus quas dolorem, dolore
               </p>
-              <button>see more</button>
+              <div class="btn-container">
+                <button type="button" class="btn mx-2">
+                  <a href="#">See more</a>
+                </button>
+                <button type="button" class="btn mx-2">
+                  <a href="#">Book now</a>
+                </button>
+              </div>
             </div>
 
-            <div class="foodservice services mb-3 p-3">
+            <div class="foodService services col-12 mb-3 p-3">
               <h3>discover</h3>
               <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit
                 dolor illo perferendis incidunt? Qui, consectetur! Explicabo vel
                 obcaecati vitae eius nesciunt ducimus quas dolorem, dolore
               </p>
-              <button>see more</button>
+              <div class="btn-container">
+                <button type="button" class="btn mx-2">
+                  <a href="#">See more</a>
+                </button>
+                <button type="button" class="btn mx-2">
+                  <a href="#">Book now</a>
+                </button>
+              </div>
             </div>
           </section>
         </div>
 
-        <section class="tourAround">
-          <div id="carouselExampleCaptions" class="carousel slide">
-            <div class="carousel-indicators">
-              <button
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide-to="0"
-                class="active"
-                aria-current="true"
-                aria-label="Slide 1"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide-to="1"
-                aria-label="Slide 2"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide-to="2"
-                aria-label="Slide 3"
-              ></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img
-                  src="./images/jonathan-borba-zh8M3cvvtmY-unsplash.jpg"
-                  class="d-block w-100"
-                />
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>First slide label</h5>
-                  <p>
-                    Some representative placeholder content for the first slide.
-                  </p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="./images/jonathan-borba-zh8M3cvvtmY-unsplash.jpg"
-                  class="d-block w-100"
-                />
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Second slide label</h5>
-                  <p>
-                    Some representative placeholder content for the second
-                    slide.
-                  </p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="./images/jonathan-borba-zh8M3cvvtmY-unsplash.jpg"
-                  class="d-block w-100"
-                />
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>
-                    Some representative placeholder content for the third slide.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
+        <section class="tourAround row mb-5">
+          <video
+            src="./videos/surfingpeople.mp4"
+            type="video/mp4"
+            autoplay
+            loop
+          ></video>
         </section>
 
         <section class="gallary">
@@ -252,156 +218,83 @@
       </main>
 
       <footer>
-     <div class="footer-container">
-      <img
-        src="/images.jpeg"
-        alt=""
-        class="footer-photo"
-        width="300px"
-        height="300px"
-      />
-      <img
-        src="/images.jpeg"
-        alt=""
-        class="footer-photo"
-        width="300px"
-        height="300px"
-      />
-      <img
-        src="/images.jpeg"
-        alt=""
-        class="footer-photo"
-        width="300px"
-        height="300px"
-      />
-      <img
-        src="/images.jpeg"
-        alt=""
-        class="footer-photo"
-        width="300px"
-        height="300px"
-      />
-      <img
-        src="/images.jpeg"
-        alt=""
-        class="footer-photo"
-        width="300px"
-        height="300px"
-      />
-      <img
-        src="/images.jpeg"
-        alt=""
-        class="footer-photo"
-        width="300px"
-        height="300px"
-      />
-      <img
-        src="/images.jpeg"
-        alt=""
-        class="footer-photo"
-        width="300px"
-        height="300px"
-      />
-      <img
-        src="/images.jpeg"
-        alt=""
-        class="footer-photo"
-        width="300px"
-        height="300px"
-      />
-      <img
-        src="/images.jpeg"
-        alt=""
-        class="footer-photo"
-        width="300px"
-        height="300px"
-      />
-      <img
-        src="/images.jpeg"
-        alt=""
-        class="footer-photo"
-        width="300px"
-        height="300px"
-      />
-    </div>
+        <div class="row primary">
+          <div class="column about">
+            <h3>AWESOME VILLA</h3>
 
-    <footer>
-      <div class="row primary">
-        <div class="column about">
-          <h3>AWESOME VILLA</h3>
+            <p>
+              "Travel with a sense of purpose and use your adventures as an
+              opportunity to give back to local communities and protect the
+              environment."<br />
+              "Be present in the moment and savor the journey, not just the
+              destination."
+            </p>
 
-          <p>
-            "Travel with a sense of purpose and use your adventures as an
-            opportunity to give back to local communities and protect the
-            environment."<br />
-            "Be present in the moment and savor the journey, not just the
-            destination."
-          </p>
+            <div class="social">
+              <i class="fa-brands fa-facebook-square"></i>
+              <i class="fa-brands fa-instagram-square"></i>
+              <i class="fa-brands fa-twitter-square"></i>
+              <i class="fa-brands fa-youtube-square"></i>
+              <i class="fa-brands fa-whatsapp-square"></i>
+            </div>
+          </div>
 
-          <div class="social">
-            <i class="fa-brands fa-facebook-square"></i>
-            <i class="fa-brands fa-instagram-square"></i>
-            <i class="fa-brands fa-twitter-square"></i>
-            <i class="fa-brands fa-youtube-square"></i>
-            <i class="fa-brands fa-whatsapp-square"></i>
+          <div class="column links">
+            <h3>Overview</h3>
+
+            <ul>
+              <li>
+                <a href="#faq">F.A.Q</a>
+              </li>
+              <li>
+                <a href="#cookies-policy">Cookies Policy</a>
+              </li>
+              <li>
+                <a href="#terms-of-services">Pricing</a>
+              </li>
+              <li>
+                <a href="#support">Map</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="column links">
+            <h3>Resources</h3>
+            <ul>
+              <li>
+                <a href="#faq">Help Center</a>
+              </li>
+              <li>
+                <a href="#cookies-policy">Support</a>
+              </li>
+              <li>
+                <a href="#terms-of-services">Terms Of Service</a>
+              </li>
+              <li>
+                <a href="#support">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="column subscribe">
+            <h3>Newsletter</h3>
+            <div>
+              <input type="email" placeholder="Your email id here" />
+              <button class="subscribe-button">Subscribe</button>
+            </div>
           </div>
         </div>
 
-        <div class="column links">
-          <h3>Overview</h3>
-
-          <ul>
-            <li>
-              <a href="#faq">F.A.Q</a>
-            </li>
-            <li>
-              <a href="#cookies-policy">Cookies Policy</a>
-            </li>
-            <li>
-              <a href="#terms-of-services">Pricing</a>
-            </li>
-            <li>
-              <a href="#support">Map</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="column links">
-          <h3>Resources</h3>
-          <ul>
-            <li>
-              <a href="#faq">Help Center</a>
-            </li>
-            <li>
-              <a href="#cookies-policy">Support</a>
-            </li>
-            <li>
-              <a href="#terms-of-services">Terms Of Service</a>
-            </li>
-            <li>
-              <a href="#support">Contact Us</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="column subscribe">
-          <h3>Newsletter</h3>
-          <div>
-            <input type="email" placeholder="Your email id here" />
-            <button>Subscribe</button>
+        <div class="row copyright">
+          <div class="footer-menu">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+            <a href="">Blog</a>
+            <a href="">Social</a>
           </div>
+          <p>Copyright &copy; 2023 Awesome Villa</p>
         </div>
-      </div>
-
-      <div class="row copyright">
-        <div class="footer-menu">
-          <a href="">Home</a>
-          <a href="">About</a>
-          <a href="">Contact</a>
-          <a href="">Blog</a>
-          <a href="">Social</a>
-        </div>
-        <p>Copyright &copy; 2023 Awesome Villa</p>
       </footer>
     </article>
 
@@ -410,8 +303,5 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
-
-  
-
   </body>
 </html>
