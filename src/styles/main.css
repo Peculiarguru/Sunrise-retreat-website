@@ -11299,6 +11299,7 @@ main video {
   padding: 15px;
   border: 1px solid white;
   border-radius: 5px;
+  cursor: pointer;
   transition: transform 0.5s ease;
   margin-top: 20px;
   border-radius: 50px;
