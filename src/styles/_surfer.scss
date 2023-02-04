@@ -1,91 +1,51 @@
 @import url("https://fonts.googleapis.com/css2?family=Chivo+Mono&family=Fira+Sans+Condensed:wght@100&family=Itim&family=Jura&family=Lato:wght@300&family=Lobster&family=Maven+Pro&family=Monoton&family=Pacifico&family=Poller+One&family=Poppins:wght@300;400&family=Roboto+Condensed&family=Roboto+Slab:wght@500&family=Roboto:ital,wght@0,500;1,400&family=Rubik+Gemstones&family=Rubik+Spray+Paint&display=swap");
 
-body {
+.surfContainer {
   font-family: "Itim", cursive;
-  background-color: lightskyblue;
-}
 
-header {
-  text-align: center;
-  padding: 20px;
-  background-color: white;
-}
+  .big-font {
+    font-size: 23px;
+  }
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-nav {
-  display: flex;
-  justify-content: center;
-  padding: 20px;
-  background-color: white;
-}
+    margin-bottom: 300px;
+    margin-top: 100px;
+    border-radius: 10px;
+    transition: 30ms;
+  }
 
-nav ul {
-  list-style-type: none;
-  display: flex;
-}
+  h3 {
+    text-align: center;
+    margin-top: 100px;
+    font-weight: bold;
+    font-size: 50px;
+  }
 
-nav a {
-  text-decoration: none;
-  margin-right: 20px;
-  font-size: 18px;
-  color: black;
-}
+  .sec1 img {
+    display: inline-block;
+    align-items: center;
+    height: 300px;
+    width: 300px;
+    padding: 15px;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+    margin-top: 20px;
+    border-radius: 50px;
 
-main {
-  display: flex;
-  justify-content: center;
-  padding: 20px;
-  background-color: white;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  }
+  .sec1 img:hover {
+    opacity: 0.5;
+    transform: scale(1.1);
+  }
 }
-
-section {
-  width: 70%;
-  padding: 20px;
-  margin: 20px;
-}
-h1:hover {
-  opacity: 0.5;
-  cursor: pointer;
-}
-
-h2 {
-  cursor: pointer;
-}
-h2:hover {
-  opacity: 0.7;
-}
-nav li a:hover {
-  transition: 1s;
-}
-nav li a:hover {
-  background-color: gray;
-  border-radius: 5px;
-  color: azure;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-}
-ul li {
-  font-size: 20px;
-  font-weight: bold;
-}
-
-img {
-  transition: transform 0.6s ease-in-out;
-  border-radius: 5px;
-  cursor: pointer;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-}
-
-img:hover {
-  opacity: 0.8;
-  transform: translate3d(0, -10px, 0);
-}
-
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: white;
-  color: gray;
+@media (max-width: 375px) {
+  .import {
+    text-align: start;
+  }
 }

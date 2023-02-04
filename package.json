@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "This is design of our website",
   "scripts": {
-    "start": "rm -rf dev-serve && parcel src/yoga.html --dist-dir dev-serve",
+
+    "start": "rm -rf dev-serve && parcel src/surfer.html --dist-dir dev-serve",
+
+    
+
     "build": "rm -rf build && parcel build src/index.html --dist-dir build --public-url ./",
     "publish": "gh-pages -d build"
   },
