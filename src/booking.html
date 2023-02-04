@@ -1,0 +1,161 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/main.scss" />
+    <title>Villa website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,200&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- navbar section -->
+
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <div class="logo">
+          <img src="./images/logo-light.png" alt="logo" style="width: 120px" />
+        </div>
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon text-light"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Surf</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Yoga</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Food</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Book</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success navbtn" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div
+      id="carouselExampleAutoplaying"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./images/header-yoga.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block text-center mb-5 pb-5">
+            <h1 class="display-4">Welcome to your dream Destination</h1>
+            <p>
+              Sunrise Retreat is a unique hideaway with soul and character, a
+              break from reality, the ability to explore and find what you’re
+              passionate about.
+            </p>
+
+            <button class="btn btn-outline-success navbtn" type="submit">
+              Book here
+            </button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./images/header-2.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block text-start mb-5 pb-5">
+            <h1 class="display-4">Purify your mind</h1>
+            <p>
+              Explore indescribable feelings, joy, friendships, a source of
+              fear, a spiritual connection, and a path to self-discovery.
+            </p>
+
+            <button class="btn btn-outline-success navbtn" type="submit">
+              Let's go!
+            </button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./images/header-2.avif" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block text-start mb-5 pb-5">
+            <h1 class="display-4">Travel with Soul</h1>
+            <p>Start your day with an activating session every morning</p>
+            <button class="btn btn-outline-success navbtn" type="submit">
+              Try now
+            </button>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
