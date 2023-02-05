@@ -38,12 +38,12 @@
     grid-area: 10/4/19/6;
   }
 }
-.yoga {
+.serviceDescription {
   display: flex;
   justify-content: center;
   margin-top: 30px;
 }
-.yoga-text {
+.serviceDescription-text {
   width: 80%;
   display: flex;
   flex-direction: column;
@@ -56,7 +56,7 @@
   }
 }
 
-.yoga-text div {
+.serviceDescription-text div {
   text-align: center;
   padding-top: 20px;
 }
