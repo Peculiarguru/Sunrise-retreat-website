@@ -43,29 +43,30 @@
   //   opacity: 0.5;
   //   transform: scale(1.1);
   // }
+  .surf-gallery-container {
+    .grid-style1 {
+      background-image: url(../images/yoga-gall-1.jpg);
+    }
 
-  .grid-style1 {
-    background-image: url(../images/yoga-gall-1.jpg);
-  }
+    .grid-style2 {
+      background-image: url(../images/yoga-gall-4.jpg);
+    }
 
-  .grid-style2 {
-    background-image: url(../images/yoga-gall-4.jpg);
-  }
+    .grid-style3 {
+      background-image: url(../images/yoga-gall-2.jpg);
+    }
 
-  .grid-style3 {
-    background-image: url(../images/yoga-gall-2.jpg);
-  }
+    .grid-style4 {
+      background-image: url(../images/yoga-gall-5.jpg);
+    }
 
-  .grid-style4 {
-    background-image: url(../images/yoga-gall-5.jpg);
-  }
+    .grid-style5 {
+      background-image: url(../images/surferImg/surf1.jpg);
+    }
 
-  .grid-style5 {
-    background-image: url(../images/yoga-header5.jpg);
-  }
-
-  .grid-style6 {
-    background-image: url(../images/breakingwaves.jpg);
+    .grid-style6 {
+      background-image: url(../images/breakingwaves.jpg);
+    }
   }
 }
 @media (max-width: 375px) {
