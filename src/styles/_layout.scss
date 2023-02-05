@@ -155,9 +155,61 @@ main {
     background-image: url(../images/servicebg2.jpg);
     @include backgroundStyle;
   }
-  video {
-    height: 250px;
+
+  // style for testimonials
+  .testimonies {
+    .demo {
+      background: linear-gradient(112deg, #ffffff 50%, #eef3c0 50%);
+      max-width: 900px;
+      margin: auto;
+    }
+    .carousel-caption {
+      position: initial;
+      z-index: 10;
+      padding: 5rem 8rem;
+      color: rgba(78, 77, 77, 0.856);
+      text-align: center;
+      font-size: 1.2rem;
+      font-style: italic;
+      font-weight: bold;
+      line-height: 2rem;
+    }
+
+    .carousel-caption img {
+      width: 6rem;
+      border-radius: 5rem;
+      margin-top: 2rem;
+    }
+    @media (max-width: 767px) {
+      .carousel-caption img {
+        width: 4rem;
+        border-radius: 4rem;
+        margin-top: 1rem;
+      }
+      #image-caption {
+        font-style: normal;
+        font-size: 0.6rem;
+        margin-top: 0.5rem;
+      }
+      .carousel-caption {
+        position: initial;
+        z-index: 10;
+        padding: 3rem 2rem;
+        color: rgba(78, 77, 77, 0.856);
+        text-align: center;
+        font-size: 0.7rem;
+        font-style: italic;
+        font-weight: bold;
+        line-height: 1.5rem;
+      }
+    }
+    #image-caption {
+      font-style: normal;
+      font-size: 1rem;
+      margin-top: 0.5rem;
+    }
   }
+  // end of style for testimonials
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -177,10 +229,7 @@ main {
       grid-area: foodService;
     }
   }
-  video {
-    height: 250px;
-    width: 100%;
-  }
+
   .img-fluid {
     height: 100%;
     object-fit: cover;
