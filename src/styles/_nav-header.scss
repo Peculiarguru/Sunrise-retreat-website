@@ -8,20 +8,16 @@
   background-color: rgba(210, 105, 30, 0.568);
   .nav-link {
     color: whitesmoke;
+    opacity: 0.6;
+    .nav-item {
+      margin-left: 20px;
+    }
   }
   .logo {
     img {
       width: 60px;
     }
     padding: 10px 0;
-
-    opacity: 0.6;
-    .nav-link {
-      color: whitesmoke;
-    }
-    .nav-item {
-      margin-left: 20px;
-    }
   }
   .navbar-toggler-icon {
     width: 20px;
@@ -32,12 +28,21 @@
   background-color: #abb557;
   color: whitesmoke;
   border: none;
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  & a:hover {
+    background-color: white;
+    color: #abb557;
+  }
+  &:hover {
+    background-color: white;
+    color: #abb557;
+  }
 }
 
-.btn:hover {
-  background-color: white;
-  color: #abb557;
-}
 @media screen and (max-width: 425px) {
   .d-block {
     height: 350px;
