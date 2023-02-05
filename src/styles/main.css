@@ -5,6 +5,7 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css2?family=Chivo+Mono&family=Fira+Sans+Condensed:wght@100&family=Itim&family=Jura&family=Lato:wght@300&family=Lobster&family=Maven+Pro&family=Monoton&family=Pacifico&family=Poller+One&family=Poppins:wght@300;400&family=Roboto+Condensed&family=Roboto+Slab:wght@500&family=Roboto:ital,wght@0,500;1,400&family=Rubik+Gemstones&family=Rubik+Spray+Paint&display=swap");
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -10928,36 +10929,64 @@ textarea.form-control-lg {
   top: 0;
   width: 100%;
   z-index: 5;
-  padding: 20px;
-  background-color: white;
+  padding: 10px 0;
+  background-color: chocolate;
+  opacity: 0.6;
+}
+.navbar .nav-link {
+  color: whitesmoke;
+}
+.navbar .logo {
+  padding: 10px 0;
+  background-color: chocolate;
+  opacity: 0.6;
 }
 .navbar .logo img {
   width: 60px;
 }
-.navbar .nav-item {
+.navbar .logo .nav-link {
+  color: whitesmoke;
+}
+.navbar .logo .nav-item {
   margin-left: 20px;
 }
-.navbar .nav-item .nav-link:hover {
-  -webkit-text-decoration: overline 4px #bed558;
-          text-decoration: overline 4px #bed558;
-  color: beige;
-  transition: margin 1s;
+.navbar .navbar-toggler-icon {
+  width: 20px;
+  color: white;
 }
 
-@media screen and (max-width: 768px) {
+.btn {
+  background-color: #abb557;
+  color: whitesmoke;
+  border: none;
+}
+
+.btn:hover {
+  background-color: white;
+  color: #abb557;
+}
+
+@media screen and (max-width: 425px) {
+  .d-block {
+    height: 350px;
+  }
+}
+@media screen and (min-width: 768px) {
   .nav-item {
-    font-size: 1rem;
+    font-size: 0.8rem;
+  }
+  .d-block {
+    height: 474px;
   }
 }
 @media screen and (min-width: 1024px) {
   .nav-item {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+  }
+  .d-block {
+    height: 100vh;
   }
 }
-header .d-block {
-  height: 392px;
-}
-
 main {
   margin-top: 20px;
 }
@@ -10978,22 +11007,132 @@ main .banner {
 main .reserveBooking {
   display: flex;
   justify-content: center;
+  align-items: center;
+  height: 50px;
+  overflow: hidden;
+  margin: 50px;
+}
+main .reserveBooking .animationContainer {
+  height: 50px;
+}
+main .reserveBooking .animationContainer .animation {
+  overflow: hidden;
+  margin-left: 20px;
+  height: 500px;
+}
+main .reserveBooking .animationContainer .animation h4, main .reserveBooking .animationContainer .animation .h4 {
+  font-size: 1rem;
+}
+main .reserveBooking .animationContainer .animation > div > div {
+  margin-bottom: 1rem;
+  height: 50px;
+  width: 200px;
+  color: white;
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin-top: 20px;
+}
+main .reserveBooking .animationContainer .animation {
+  -webkit-animation: text-animation 8s infinite;
+          animation: text-animation 8s infinite;
+  font-family: "Montserrat", sans-serif;
+}
+main .reserveBooking .animationContainer .first {
+  background-color: chocolate;
+}
+main .reserveBooking .animationContainer .second {
+  background-color: #abb557;
+}
+main .reserveBooking .animationContainer .third {
+  background-color: rgb(244, 181, 135);
+}
+@-webkit-keyframes text-animation {
+  0% {
+    margin-top: 0;
+  }
+  10% {
+    margin-top: 0;
+  }
+  20% {
+    margin-top: -66px;
+  }
+  30% {
+    margin-top: -66px;
+  }
+  40% {
+    margin-top: -132px;
+  }
+  60% {
+    margin-top: -132px;
+  }
+  70% {
+    margin-top: -66px;
+  }
+  80% {
+    margin-top: -66px;
+  }
+  90% {
+    margin-top: 0;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+@keyframes text-animation {
+  0% {
+    margin-top: 0;
+  }
+  10% {
+    margin-top: 0;
+  }
+  20% {
+    margin-top: -66px;
+  }
+  30% {
+    margin-top: -66px;
+  }
+  40% {
+    margin-top: -132px;
+  }
+  60% {
+    margin-top: -132px;
+  }
+  70% {
+    margin-top: -66px;
+  }
+  80% {
+    margin-top: -66px;
+  }
+  90% {
+    margin-top: 0;
+  }
+  100% {
+    margin-top: 0;
+  }
 }
 main .services {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  position: relative;
 }
 main .btn {
   background-color: #abb557;
+  color: whitesmoke;
+  border: none;
 }
 main .btn a {
   text-decoration: none;
-  color: beige;
+  color: white;
+}
+main .btn a:hover {
+  background-color: white;
+  color: #abb557;
 }
 main .surfService {
   background-image: url(../images/servicebg3.jpg);
@@ -11017,8 +11156,10 @@ main video {
   height: 250px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   .whatWeDo {
+    width: 70%;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(2, 300px);
     grid-template-rows: repeat(2, 300px);
@@ -11038,5 +11179,139 @@ main video {
   video {
     height: 250px;
     width: 100%;
+  }
+  .img-fluid {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .whatWeDo {
+    display: flex;
+    justify-content: space-around;
+  }
+  .whatWeDo .foodService,
+.whatWeDo .yogaService,
+.whatWeDo .surfService {
+    height: 400px;
+    width: 30%;
+  }
+}
+.booking {
+  margin-top: 5px;
+}
+.booking img {
+  width: 100%;
+  height: 420px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.booking .formContainer {
+  background-color: #f2f2f2;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  margin: 0 auto;
+}
+.booking .formContainer h2, .booking .formContainer .h2 {
+  text-align: center;
+  text-shadow: #abb557 2px 2px 2px;
+}
+.booking input[type]:not([type=submit]) {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+.booking select,
+.booking textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+.booking .btn {
+  padding: 12px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+  background-color: #abb557;
+  color: whitesmoke;
+  border: none;
+}
+.booking .btn:hover {
+  background-color: #87f266;
+}
+.booking .card {
+  box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25), -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
+  cursor: pointer;
+}
+.booking .card * {
+  transition: all 0.7s ease;
+}
+.booking .card .card:hover {
+  transform: scale(1.2);
+  box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25), -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
+  background-color: #87f266;
+}
+
+@media screen and (max-device-width: 763px) {
+  .formContainer {
+    width: 95%;
+    margin-top: 20px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .card {
+    width: 48%;
+    margin: 30px auto;
+  }
+}
+.surfContainer {
+  font-family: "Itim", cursive;
+}
+.surfContainer .big-font {
+  font-size: 23px;
+}
+.surfContainer .center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 300px;
+  margin-top: 100px;
+  border-radius: 10px;
+  transition: 30ms;
+}
+.surfContainer h3, .surfContainer .h3 {
+  text-align: center;
+  margin-top: 100px;
+  font-weight: bold;
+  font-size: 50px;
+}
+.surfContainer .sec1 img {
+  display: inline-block;
+  align-items: center;
+  height: 300px;
+  width: 300px;
+  padding: 15px;
+  border: 1px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+  margin-top: 20px;
+  border-radius: 50px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+.surfContainer .sec1 img:hover {
+  opacity: 0.5;
+  transform: scale(1.1);
+}
+
+@media (max-width: 375px) {
+  .import {
+    text-align: start;
   }
 }/*# sourceMappingURL=main.css.map */
