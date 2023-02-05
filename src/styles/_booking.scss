@@ -62,6 +62,24 @@
       background-color: #87f266;
     }
   }
+  .btn {
+    background-color: #abb557;
+    color: whitesmoke;
+    border: none;
+    a {
+      text-decoration: none;
+      color: white;
+    }
+
+    & a:hover {
+      background-color: white;
+      color: #abb557;
+    }
+    &:hover {
+      background-color: white;
+      color: #abb557;
+    }
+  }
 }
 
 @media screen and (max-device-width: 763px) {
