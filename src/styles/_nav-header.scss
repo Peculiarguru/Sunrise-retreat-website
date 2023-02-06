@@ -4,25 +4,29 @@
   top: 0;
   width: 100%;
   z-index: 5;
-  padding: 10px 0;
+  padding: 10px 10px;
   background-color: rgba(210, 105, 30, 0.568);
   .nav-link {
     color: whitesmoke;
-    opacity: 0.6;
+   
     .nav-item {
       margin-left: 20px;
     }
   }
   .logo {
     img {
-      width: 60px;
+      margin-right: 20px;
     }
-    padding: 10px 0;
+    
   }
   .navbar-toggler-icon {
     width: 20px;
     color: white;
   }
+}
+
+header {
+  width: 100%;
 }
 .btn {
   background-color: #abb557;
@@ -45,15 +49,21 @@
 
 @media screen and (max-width: 425px) {
   .d-block {
-    height: 350px;
+    height: 400px;
+  }
+  .textheader {
+    display: none;
+  }
+  .display-4 {
+    font-size: 1.6rem;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width:426px) and (max-width: 1023px) {
   .nav-item {
     font-size: 0.8rem;
   }
   .d-block {
-    height: 474px;
+    height: 500px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -61,7 +71,7 @@
     font-size: 1.2rem;
   }
   .d-block {
-    height: 600px;
+    height: 750px;
     object-fit: cover;
   }
 }
