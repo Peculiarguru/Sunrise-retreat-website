@@ -1,17 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Chivo+Mono&family=Fira+Sans+Condensed:wght@100&family=Itim&family=Jura&family=Lato:wght@300&family=Lobster&family=Maven+Pro&family=Monoton&family=Pacifico&family=Poller+One&family=Poppins:wght@300;400&family=Roboto+Condensed&family=Roboto+Slab:wght@500&family=Roboto:ital,wght@0,500;1,400&family=Rubik+Gemstones&family=Rubik+Spray+Paint&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Chivo+Mono&family=Fira+Sans+Condensed:wght@100&family=Itim&family=Jura&family=Lato:wght@300&family=Lobster&family=Maven+Pro&family=Monoton&family=Montserrat&family=Montserrat+Alternates&family=Pacifico&family=Poller+One&family=Poppins:wght@300;400&family=Roboto+Condensed&family=Roboto+Slab:wght@500&family=Roboto:ital,wght@0,500;1,400&family=Rubik+Gemstones&family=Rubik+Spray+Paint&display=swap");
 .surfContainer {
-  font-family: "Itim", cursive;
+  font-family: "Montserrat Alternates", sans-serif;
 
   .big-font {
-    font-size: 23px;
+    font-size: 17px;
   }
   .center {
     display: flex;
     justify-content: center;
     align-items: center;
 
-    margin-bottom: 300px;
+    margin-bottom: 200px;
     margin-top: 100px;
     border-radius: 10px;
     transition: 30ms;
@@ -26,27 +25,27 @@
 
   .surf-gallery-container {
     .grid-style1 {
-      background-image: url(../images/yoga-gall-1.jpg);
+      background-image: url(/src/images/surferImg/surfer_sun1.webp);
     }
 
     .grid-style2 {
-      background-image: url(../images/yoga-gall-4.jpg);
+      background-image: url(/src/images/surferImg/surf_sun2.jpg);
     }
 
     .grid-style3 {
-      background-image: url(../images/yoga-gall-2.jpg);
+      background-image: url(/src/images/surferImg/surf_sun4.jpg);
     }
 
     .grid-style4 {
-      background-image: url(../images/yoga-gall-5.jpg);
+      background-image: url(/src/images/surferImg/surfe_sun3.jpg.crdownload);
     }
 
     .grid-style5 {
-      background-image: url(../images/surferImg/surf1.jpg);
+      background-image: url(/src/images/surferImg/surfe_sun5.jpg);
     }
 
     .grid-style6 {
-      background-image: url(../images/breakingwaves.jpg);
+      background-image: url(/src/images/surferImg/surf_sun6.jpg);
     }
   }
 }
