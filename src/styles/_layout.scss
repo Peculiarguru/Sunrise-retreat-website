@@ -132,13 +132,13 @@ main {
   }
 
   @media screen and (max-width: 425px) {
-    .reserveBooking { 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    .reserveBooking {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
   }
-}
 
   .services {
     display: flex;
@@ -150,71 +150,59 @@ main {
     position: relative;
   }
 
-<<<<<<< HEAD
-=======
-  .btn {
-    background-color: #abb557;
-    color: whitesmoke;
-    border: none;
-
-    a {
-      text-decoration: none;
-      color: white;
-    }
-  }
-
-  .btn a:hover {
-    background-color: white;
-    color: $textColor;
-  }
-
-  .aboutUs p{
-    font-weight: bolder;
-  }
->>>>>>> 811ac8f (irinas chenges on main page)
   .surfService {
-    background-image:
-    linear-gradient(180deg,
-       rgba(#d3763391, 0.212),
-      rgba(#8d461491, 0.212)), url('../images/servicebg3.jpg');
+    background-image: linear-gradient(
+        180deg,
+        rgba(#d3763391, 0.212),
+        rgba(#8d461491, 0.212)
+      ),
+      url("../images/servicebg3.jpg");
     @include backgroundStyle;
   }
   .surfService:hover {
-    background-image:
-      linear-gradient(180deg,
-         rgba(#b85b1a91, 0.473),
-        rgba(#52290c91, 0.473)), url('../images/servicebg3.jpg');
+    background-image: linear-gradient(
+        180deg,
+        rgba(#b85b1a91, 0.473),
+        rgba(#52290c91, 0.473)
+      ),
+      url("../images/servicebg3.jpg");
   }
   .yogaService {
     background-image: url(../images/yoga2.jpg);
     @include backgroundStyle;
-    background-image:
-    linear-gradient(180deg,
-       rgba(#d3763391, 0.212),
-      rgba(#8d461491, 0.212)), url('../images/yoga2.jpg');
+    background-image: linear-gradient(
+        180deg,
+        rgba(#d3763391, 0.212),
+        rgba(#8d461491, 0.212)
+      ),
+      url("../images/yoga2.jpg");
   }
   .yogaService:hover {
-    background-image:
-      linear-gradient(180deg,
-         rgba(#b85b1a91, 0.473),
-        rgba(#52290c91, 0.473)), url('../images/yoga2.jpg');
+    background-image: linear-gradient(
+        180deg,
+        rgba(#b85b1a91, 0.473),
+        rgba(#52290c91, 0.473)
+      ),
+      url("../images/yoga2.jpg");
   }
   .foodService {
     background-image: url(../images/servicebg2.jpg);
-    background-image:
-    linear-gradient(180deg,
-       rgba(#d3763391, 0.212),
-      rgba(#8d461491, 0.212)), url('../images/servicebg2.jpg');
+    background-image: linear-gradient(
+        180deg,
+        rgba(#d3763391, 0.212),
+        rgba(#8d461491, 0.212)
+      ),
+      url("../images/servicebg2.jpg");
     @include backgroundStyle;
   }
   .foodService:hover {
-    background-image:
-    linear-gradient(180deg,
-       rgba(#b85b1a91, 0.473),
-      rgba(#52290c91, 0.473)), url('../images/servicebg2.jpg');
+    background-image: linear-gradient(
+        180deg,
+        rgba(#b85b1a91, 0.473),
+        rgba(#52290c91, 0.473)
+      ),
+      url("../images/servicebg2.jpg");
   }
-
-  
 
   // style for testimonials
   .testimonies {
@@ -222,7 +210,7 @@ main {
       max-width: 70%;
       margin: auto;
     }
-    .carousel-indicators button{
+    .carousel-indicators button {
       background-color: #abb557;
     }
     .carousel-caption {
@@ -280,54 +268,55 @@ main {
     }
   }
 
-@media screen and (max-width: 768px) {
-  .our-package {
-    @include flexColumnCenter();
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .whatWeDo {
-    width: 70%;
-    margin: 0 auto;
-    @include grid-style;
-
-    .surfService {
-      grid-area: surfService;
-    }
-    .yogaService {
-      grid-area: yogaService;
-      margin-bottom: 0 !important;
-    }
-    .foodService {
-      grid-area: foodService;
+  @media screen and (max-width: 768px) {
+    .our-package {
+      @include flexColumnCenter();
     }
   }
 
-  .img-fluid {
-    height: 100%;
-    object-fit: cover;
-    width: 100%;
-  }
-}
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    .whatWeDo {
+      width: 70%;
+      margin: 0 auto;
+      @include grid-style;
 
-@media screen and (min-width: 1024px) {
-  .whatWeDo {
-    display: flex;
-    justify-content: space-around;
-    .foodService,
-    .yogaService,
-    .surfService {
-      height: 400px;
-      width: 30%;
+      .surfService {
+        grid-area: surfService;
+      }
+      .yogaService {
+        grid-area: yogaService;
+        margin-bottom: 0 !important;
+      }
+      .foodService {
+        grid-area: foodService;
+      }
     }
-  }
-  .banner {
-    height: 550px;
-    img {
-      height: 480px;
-      width: 100%;
+
+    .img-fluid {
+      height: 100%;
       object-fit: cover;
+      width: 100%;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    .whatWeDo {
+      display: flex;
+      justify-content: space-around;
+      .foodService,
+      .yogaService,
+      .surfService {
+        height: 400px;
+        width: 30%;
+      }
+    }
+    .banner {
+      height: 550px;
+      img {
+        height: 480px;
+        width: 100%;
+        object-fit: cover;
+      }
     }
   }
 }
