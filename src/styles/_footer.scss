@@ -4,20 +4,11 @@ footer {
     margin-bottom: 20px;
     padding: 8px;
     border: 1px solid #ccc;
-    border-radius: 3px;
   }
   @mixin buttonStyle {
     color: whitesmoke;
     border: none;
-
-    a {
-      text-decoration: none;
-      color: white;
-    }
-    .btn a:hover {
-      background-color: white;
-      color: $textColor;
-    }
+    border-radius: 10px;
   }
 
   .footer-content-container {
@@ -30,6 +21,8 @@ footer {
     background-color: rgba(210, 105, 30, 0.568);
     font-size: 1rem;
   }
+
+
 
   a {
     text-decoration: none;
@@ -49,10 +42,18 @@ footer {
   .btn {
     @include buttonStyle;
   }
+
+  .contact-container {
+    span:hover,
+    i:hover {
+      color: #abb557;
+    }
+
   span:hover,
   a:hover,
   i:hover {
     color: whitesmoke;
     transform: scale(1.3);
+
   }
 }

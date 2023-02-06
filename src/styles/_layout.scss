@@ -14,10 +14,7 @@
   justify-content: center;
   align-items: center;
 }
-@mixin link {
-  text-decoration: none;
-  color: #abb557;
-}
+
 @mixin grid-style {
   display: grid;
   grid-template-columns: repeat(2, 300px);
@@ -30,12 +27,13 @@ $textColor: #abb557;
   .animation {
     animation: text-animation 8s infinite;
     font-family: "Montserrat", sans-serif;
+    padding-top: 10px;
   }
   .first {
     background-color: chocolate;
   }
   .second {
-    background-color: #abb557;
+    background-color: $textColor;
   }
   .third {
     background-color: rgb(244, 181, 135);
@@ -49,28 +47,28 @@ $textColor: #abb557;
       margin-top: 0;
     }
     20% {
-      margin-top: -66px;
+      margin-top: -80px;
     }
     30% {
-      margin-top: -66px;
+      margin-top: -80px;
     }
     40% {
-      margin-top: -132px;
+      margin-top: -146px;
     }
     60% {
-      margin-top: -132px;
+      margin-top: -146px;
     }
     70% {
-      margin-top: -66px;
+      margin-top: -80px;
     }
     80% {
-      margin-top: -66px;
+      margin-top: -80px;
     }
     90% {
-      margin-top: 0;
+      margin-top: -10px;
     }
     100% {
-      margin-top: 0;
+      margin-top: -10px;
     }
   }
 }
@@ -81,7 +79,7 @@ main {
     height: 50px;
     border: none;
     color: #fff;
-    background: #abb557;
+    background: $textColor;
     cursor: pointer;
   }
   .banner {
@@ -91,27 +89,31 @@ main {
     background-color: #f1f4db;
     padding-bottom: 30px;
   }
-  .reserveBooking {
+  .our-package {
     @include flexRowCenter();
-    height: 50px;
     overflow: hidden;
     margin: 50px;
+
     .animationContainer {
       height: 50px;
+      overflow: hidden;
       .animation {
-        overflow: hidden;
         margin-left: 20px;
         height: 500px;
+
         h4 {
-          font-size: 1rem;
+          font-size: 1.1rem;
+        }
+        .center-text {
+          padding-top: 10px;
         }
       }
       .animation > div > div {
         margin-bottom: 1rem;
         height: 50px;
-        width: 200px;
+        width: 250px;
         color: white;
-        font-size: 1.3rem;
+
         @include flexColumnCenter();
       }
       @include animationStyle;
@@ -128,21 +130,6 @@ main {
     position: relative;
   }
 
-  .btn {
-    background-color: #abb557;
-    color: whitesmoke;
-    border: none;
-
-    a {
-      text-decoration: none;
-      color: white;
-    }
-  }
-
-  .btn a:hover {
-    background-color: white;
-    color: $textColor;
-  }
   .surfService {
     background-image: url(../images/servicebg3.jpg);
     @include backgroundStyle;
@@ -158,7 +145,7 @@ main {
 
   // style for testimonials
   .testimonies {
-    .demo {
+    .slide {
       background: linear-gradient(112deg, #ffffff 50%, #eef3c0 50%);
       max-width: 900px;
       margin: auto;
@@ -211,6 +198,11 @@ main {
   }
   // end of style for testimonials
 }
+@media screen and (max-width: 768px) {
+  .our-package {
+    @include flexColumnCenter();
+  }
+}
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .whatWeDo {
@@ -246,6 +238,14 @@ main {
     .surfService {
       height: 400px;
       width: 30%;
+    }
+  }
+  .banner {
+    height: 550px;
+    img {
+      height: 480px;
+      width: 100%;
+      object-fit: cover;
     }
   }
 }
