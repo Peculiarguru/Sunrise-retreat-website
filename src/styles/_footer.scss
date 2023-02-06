@@ -7,7 +7,6 @@ footer {
     border-radius: 3px;
   }
   @mixin buttonStyle {
-    background-color: #abb557;
     color: whitesmoke;
     border: none;
 
@@ -35,6 +34,8 @@ footer {
   a {
     text-decoration: none;
     color: white;
+    transition: transform 2s ease-in-out;
+    padding: 2px;
   }
 
   .input-group {
@@ -51,7 +52,7 @@ footer {
   span:hover,
   a:hover,
   i:hover {
-    background-color: #abb557;
     color: whitesmoke;
+    transform: scale(1.3);
   }
 }
