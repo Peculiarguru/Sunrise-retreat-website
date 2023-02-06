@@ -27,37 +27,36 @@
       font-weight: bold;
       font-size: 50px;
     }
+  }
+  .surf-gallery-container {
+    .grid-style1 {
+      background-image: url(/src/images/surferImg/surfer_sun1.webp);
+    }
 
-    .surf-gallery-container {
-      .grid-style1 {
-        background-image: url(../images/food13.jpg);
-      }
+    .grid-style2 {
+      background-image: url(/src/images/surferImg/surf_sun2.jpg);
+    }
 
-      .grid-style2 {
-        background-image: url(../images/food15.jpg);
-      }
+    .grid-style3 {
+      background-image: url(/src/images/surferImg/surf_sun4.jpg);
+    }
 
-      .grid-style3 {
-        background-image: url(../images/food6.jpg);
-      }
+    .grid-style4 {
+      background-image: url(/src/images/surferImg/surfe_sun3.jpg.crdownload);
+    }
 
-      .grid-style4 {
-        background-image: url(../images/food9.jpg);
-      }
+    .grid-style5 {
+      background-image: url(/src/images/surferImg/surfe_sun5.jpg);
+    }
 
-      .grid-style5 {
-        background-image: url(../images/food10.jpg);
-      }
-
-      .grid-style6 {
-        background-image: url(../images/food12.jpg);
-      }
+    .grid-style6 {
+      background-image: url(/src/images/surferImg/surf_sun6.jpg);
     }
   }
+}
 
-  @media (max-width: 375px) {
-    .import {
-      text-align: start;
-    }
+@media (max-width: 375px) {
+  .import {
+    text-align: start;
   }
 }
