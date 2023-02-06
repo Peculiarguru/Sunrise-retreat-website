@@ -4,12 +4,12 @@ footer {
     margin-bottom: 20px;
     padding: 8px;
     border: 1px solid #ccc;
-    border-radius: 3px;
   }
   @mixin buttonStyle {
     background-color: #abb557;
     color: whitesmoke;
     border: none;
+    border-radius: 10px;
 
     a {
       text-decoration: none;
@@ -31,6 +31,27 @@ footer {
     background-color: rgba(210, 105, 30, 0.568);
     font-size: 1rem;
   }
+  .btn-container {
+    display: flex;
+    justify-content: center;
+    .btn {
+      background-color: #abb557;
+      color: whitesmoke;
+      border: none;
+      display: flex;
+      justify-content: center;
+      width: 100px;
+    }
+
+    & a:hover {
+      background-color: white;
+      color: #abb557;
+    }
+    &:hover {
+      background-color: white;
+      color: #abb557;
+    }
+  }
 
   a {
     text-decoration: none;
@@ -48,10 +69,10 @@ footer {
   .btn {
     @include buttonStyle;
   }
-  span:hover,
-  a:hover,
-  i:hover {
-    background-color: #abb557;
-    color: whitesmoke;
+  .contact-container {
+    span:hover,
+    i:hover {
+      color: #abb557;
+    }
   }
 }
