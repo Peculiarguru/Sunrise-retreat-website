@@ -24,48 +24,29 @@
     font-size: 50px;
   }
 
-  // .sec1 img {
-  //   display: inline-block;
-  //   align-items: center;
-  //   height: 300px;
-  //   width: 300px;
-  //   padding: 15px;
-  //   border: 1px solid white;
-  //   border-radius: 5px;
-  //   cursor: pointer;
-  //   transition: transform 0.5s ease;
-  //   margin-top: 20px;
-  //   border-radius: 50px;
-
-  //   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-  // }
-  // .sec1 img:hover {
-  //   opacity: 0.5;
-  //   transform: scale(1.1);
-  // }
   .surf-gallery-container {
     .grid-style1 {
-      background-image: url(../images/yoga-gall-1.jpg);
+      background-image: url(/src/images/surferImg/surfer_sun1.webp);
     }
 
     .grid-style2 {
-      background-image: url(../images/yoga-gall-4.jpg);
+      background-image: url(/src/images/surferImg/surf_sun2.jpg);
     }
 
     .grid-style3 {
-      background-image: url(../images/yoga-gall-2.jpg);
+      background-image: url(/src/images/surferImg/surf_sun4.jpg);
     }
 
     .grid-style4 {
-      background-image: url(../images/yoga-gall-5.jpg);
+      background-image: url(/src/images/surferImg/surfe_sun3.jpg.crdownload);
     }
 
     .grid-style5 {
-      background-image: url(../images/surferImg/surf1.jpg);
+      background-image: url(/src/images/surferImg/surfe_sun5.jpg);
     }
 
     .grid-style6 {
-      background-image: url(../images/breakingwaves.jpg);
+      background-image: url(/src/images/surferImg/surf_sun6.jpg);
     }
   }
 }
