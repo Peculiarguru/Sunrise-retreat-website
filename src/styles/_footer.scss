@@ -1,4 +1,5 @@
 footer {
+
   @mixin formStyle {
     width: 100%;
     margin-bottom: 20px;
@@ -23,8 +24,7 @@ footer {
 
   .footer-content-container {
     background-color: #8a8a8a;
-    padding: 20px;
-    height: auto;
+    margin-top: 20px;
     color: white;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
       sans-serif;
@@ -54,4 +54,21 @@ footer {
     background-color: #abb557;
     color: whitesmoke;
   }
+}
+@media screen and (max-width: 425px) {
+  .explore {
+      display: none;
+      
+    }
+    .footer-content-container{
+      height: 560px;
+     /*  font-size: 0.8rem; */
+    }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-content-container {
+    height: 340px;
+  }
+
 }
