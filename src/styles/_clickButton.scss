@@ -19,10 +19,20 @@
     &:hover {
       background-color: white;
       color: #abb557;
+      transform: scale(1.3);
     }
   }
 }
 
-a {
+a,
+i {
   color: white;
+  transition: transform 2s ease-in-out;
+}
+
+i:hover {
+  transform: scale(1.3);
+}
+i {
+  padding-left: 20px;
 }
