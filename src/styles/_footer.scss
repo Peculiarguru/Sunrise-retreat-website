@@ -5,21 +5,11 @@ footer {
     margin-bottom: 20px;
     padding: 8px;
     border: 1px solid #ccc;
-    border-radius: 3px;
   }
   @mixin buttonStyle {
-    background-color: #abb557;
     color: whitesmoke;
     border: none;
-
-    a {
-      text-decoration: none;
-      color: white;
-    }
-    .btn a:hover {
-      background-color: white;
-      color: $textColor;
-    }
+    border-radius: 10px;
   }
 
   .footer-content-container {
@@ -32,9 +22,13 @@ footer {
     font-size: 1rem;
   }
 
+
+
   a {
     text-decoration: none;
     color: white;
+    transition: transform 2s ease-in-out;
+    padding: 2px;
   }
 
   .input-group {
@@ -48,11 +42,19 @@ footer {
   .btn {
     @include buttonStyle;
   }
+
+  .contact-container {
+    span:hover,
+    i:hover {
+      color: #abb557;
+    }
+
   span:hover,
   a:hover,
   i:hover {
-    background-color: #abb557;
     color: whitesmoke;
+    transform: scale(1.3);
+
   }
 }
 @media screen and (max-width: 425px) {

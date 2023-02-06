@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/main.scss" />
-    <title>Villa website</title>
+    <title>Sunrise Retreat</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <script
@@ -112,9 +112,9 @@
               find what you’re passionate about.
             </p>
 
-            <button class="btn btn-outline-success navbtn" type="submit">
+            <div class="btn-container">
               <a href="./booking.html">Book now</a>
-            </button>
+            </div>
           </div>
         </div>
         <div class="carousel-item">
@@ -126,21 +126,27 @@
               fear, a spiritual connection, and a path to self-discovery.
             </p>
 
-            <button class="btn btn-outline-success navbtn" type="submit">
+            <div class="btn-container">
               <a href="./surfer.html">See more</a>
-            </button>
+            </div>
           </div>
         </div>
         <div class="carousel-item">
           <img src="./images/header-2.avif" class="d-block w-100" alt="..." />
           <div class="carousel-caption text-start mb-5 pb-5">
             <h1 class="display-4">Travel with Soul</h1>
+
             <p class="textheader">
               Start your day with an activating session every morning
             </p>
             <button class="btn btn-outline-success navbtn" type="submit">
+
+            <p>Start your day with an activating session every morning</p>
+
+            <div class="btn-container">
+
               <a href="./yoga.html">See more</a>
-            </button>
+            </div>
           </div>
         </div>
       </div>
@@ -182,9 +188,10 @@
               obligations. We offer you a supporting program from which you can
               choose what is personally good for you at the moment.
             </p>
-            <button class="btn mx-2">
-              <a href="./yoga.html">Explore more</a>
-            </button>
+
+            <div class="btn-container">
+              <a href="./yoga.html">See more</a>
+            </div>
           </div>
           <div class="col-12 col-md-6">
             <img src="./images/about.jpg" class="img-fluid" alt="nature img" />
@@ -192,18 +199,18 @@
         </div>
       </section>
 
-      <div class="reserveBooking">
-        <h3>OUR PACKAGE</h3>
+      <div class="our-package">
+        <h4>OUR PACKAGE</h4>
         <div class="animationContainer">
           <section class="animation">
             <div class="first">
-              <div><h4>SURF PACKAGE</h4></div>
+              <div class="center-text"><h4>SURF PACKAGE</h4></div>
             </div>
             <div class="second">
-              <div><h4>YOGA PACKAGE</h4></div>
+              <div class="center-text"><h4>YOGA PACKAGE</h4></div>
             </div>
             <div class="third">
-              <div><h4>LODGE AND FOOD</h4></div>
+              <div class="center-text"><h4>LODGE AND FOOD</h4></div>
             </div>
           </section>
         </div>
@@ -220,9 +227,7 @@
               destinations to lessons and events.
             </p>
             <div class="btn-container">
-              <button class="btn mx-2">
-                <a href="./surfer.html">See more</a>
-              </button>
+              <a href="./surfer.html">See more</a>
             </div>
           </div>
 
@@ -233,9 +238,7 @@
               uplifting individuals. Let us take care of you.
             </p>
             <div class="btn-container">
-              <button class="btn mx-2">
-                <a href="./yoga.html">See more</a>
-              </button>
+              <a href="./yoga.html">See more</a>
             </div>
           </div>
 
@@ -248,9 +251,7 @@
               your taste buds.
             </p>
             <div class="btn-container">
-              <button class="btn mx-2">
-                <a href="./food.html">See more</a>
-              </button>
+              <a href="./food.html">See more</a>
             </div>
           </div>
         </section>
@@ -261,7 +262,7 @@
       <section class="testimonies">
         <div
           id="testimonyCarousel"
-          class="carousel slide demo"
+          class="carousel slide"
           data-bs-ride="carousel"
         >
           <div class="carousel-indicators">
@@ -340,33 +341,39 @@
         <div
           class="col-12 col-md-4 d-flex flex-column justify-content-center align-items-center contact-details text-center mb-5"
         >
-          <h4>Contact Details</h4>
-          <div><i class="fa fa-phone fa-lg"></i> <span>+49162879023</span></div>
+          <div
+            class="contact-container d-flex flex-column justify-content-center align-items-centerd-flex flex-column justify-content-center align-items-center"
+          >
+            <h4>Contact Details</h4>
+            <div>
+              <i class="fa fa-phone fa-lg"></i> <span>+49162879023</span>
+            </div>
 
-          <div>
-            <a href="mailto:sunriseretreat.com">
-              <i class="fa fa-envelope-o"></i
-              ><span> sunriseretreat@info.com</span>
-            </a>
-          </div>
+            <div>
+              <a href="mailto:sunriseretreat.com">
+                <i class="fa fa-envelope-o"></i
+                ><span> sunriseretreat@info.com</span>
+              </a>
+            </div>
 
-          <div>
-            <i class="fa fa-map-marker fa-lg"></i>
-            <span>99,Main Street,Hikkaduwa; Sri Lanka.</span>
+            <div>
+              <i class="fa fa-map-marker fa-lg"></i>
+              <span>99,Main Street,Hikkaduwa; Sri Lanka.</span>
+            </div>
           </div>
 
           <div class="social mt-3">
             <h4>Follow Us</h4>
-            <a href="https://www.facebook.com/"
+            <a href="https://www.facebook.com/" target="_blank"
               ><i class="fa fa-facebook-square fa-2x"></i
             ></a>
-            <a href="https://twitter.com/"
+            <a href="https://twitter.com/" target="_blank"
               ><i class="fa fa-twitter-square fa-2x"></i
             ></a>
-            <a href="https://www.instagram.com/"
+            <a href="https://www.instagram.com/" target="_blank"
               ><i class="fa fab fa-instagram fa-2x"></i
             ></a>
-            <a href="https://www.linkedin.com/"
+            <a href="https://www.linkedin.com/" target="_blank"
               ><i class="fa fa-linkedin-square fa-2x"></i
             ></a>
           </div>
@@ -376,6 +383,7 @@
           class="contactUs col-12 col-md-5 d-flex flex-column justify-content-center align-items-center mb-5"
           id="contact"
         >
+
           <h4>Contact form</h4>
           <div class="input-group m-0">
             <div>
@@ -389,10 +397,26 @@
               />
             </div>
 
-            <div>
-              <textarea placeholder="Message"></textarea>
-            </div>
-            <input type="submit" class="btn-lg btn" />
+          <div>
+            <h4>Contact form</h4>
+            <form>
+              <div>
+                <input type="text" placeholder="Name" />
+              </div>
+
+
+              <div>
+                <input type="email" placeholder="Email address" />
+              </div>
+
+              <div>
+                <textarea placeholder="Message"></textarea>
+              </div>
+
+              <div class="btn-container">
+                <button class="btn p-2">Submit</button>
+              </div>
+            </form>
           </div>
         </div>
 
