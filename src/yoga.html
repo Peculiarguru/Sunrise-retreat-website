@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/main.scss" />
-    <title>Document</title>
+    <title>Sunrise Retreat</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -110,9 +110,9 @@
             alt="..."
           />
           <div class="carousel-caption d-none d-md-block text-center mb-5 pb-5">
-            <button class="btn btn-outline-success navbtn" type="submit">
+            <div class="btn-container">
               <a href="#contact">Try now</a>
-            </button>
+            </div>
           </div>
         </div>
         <div class="carousel-item">
@@ -258,29 +258,27 @@
           id="contact"
         >
           <h4>Contact form</h4>
-          <div class="input-group">
+          <form>
             <div>
-              <input class="input-group-field" type="text" placeholder="Name" />
+              <input type="text" placeholder="Name" />
             </div>
+
             <div>
-              <input
-                class="input-group-field"
-                type="email"
-                placeholder="Email address"
-              />
+              <input type="email" placeholder="Email address" />
             </div>
 
             <div>
               <textarea placeholder="Message"></textarea>
             </div>
+
             <div class="btn-container">
               <button class="btn p-2">Submit</button>
             </div>
-          </div>
+          </form>
         </div>
 
         <div
-          class="openTime col-12 col-md-3 d-flex flex-column justify-content-center align-items-center mb-5"
+          class="col-12 col-md-3 d-flex flex-column justify-content-center align-items-center mb-5"
         >
           <h3>Explore</h3>
           <ul class="navbar-nav">

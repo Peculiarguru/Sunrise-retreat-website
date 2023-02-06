@@ -10,15 +10,6 @@ footer {
     color: whitesmoke;
     border: none;
     border-radius: 10px;
-
-    a {
-      text-decoration: none;
-      color: white;
-    }
-    .btn a:hover {
-      background-color: white;
-      color: $textColor;
-    }
   }
 
   .footer-content-container {
@@ -30,32 +21,6 @@ footer {
       sans-serif;
     background-color: rgba(210, 105, 30, 0.568);
     font-size: 1rem;
-  }
-  .btn-container {
-    display: flex;
-    justify-content: center;
-    .btn {
-      background-color: #abb557;
-      color: whitesmoke;
-      border: none;
-      display: flex;
-      justify-content: center;
-      width: 100px;
-    }
-
-    & a:hover {
-      background-color: white;
-      color: #abb557;
-    }
-    &:hover {
-      background-color: white;
-      color: #abb557;
-    }
-  }
-
-  a {
-    text-decoration: none;
-    color: white;
   }
 
   .input-group {

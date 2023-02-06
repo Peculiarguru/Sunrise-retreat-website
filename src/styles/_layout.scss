@@ -14,10 +14,7 @@
   justify-content: center;
   align-items: center;
 }
-@mixin link {
-  text-decoration: none;
-  color: #abb557;
-}
+
 @mixin grid-style {
   display: grid;
   grid-template-columns: repeat(2, 300px);
@@ -36,7 +33,7 @@ $textColor: #abb557;
     background-color: chocolate;
   }
   .second {
-    background-color: #abb557;
+    background-color: $textColor;
   }
   .third {
     background-color: rgb(244, 181, 135);
@@ -82,7 +79,7 @@ main {
     height: 50px;
     border: none;
     color: #fff;
-    background: #abb557;
+    background: $textColor;
     cursor: pointer;
   }
   .banner {
@@ -94,16 +91,21 @@ main {
   }
   .our-package {
     @include flexRowCenter();
-
+    overflow: hidden;
     margin: 50px;
+
     .animationContainer {
       height: 50px;
+      overflow: hidden;
       .animation {
-        overflow: hidden;
         margin-left: 20px;
         height: 500px;
+
         h4 {
           font-size: 1.1rem;
+        }
+        .center-text {
+          padding-top: 10px;
         }
       }
       .animation > div > div {
@@ -126,32 +128,6 @@ main {
     color: white;
     font-family: "Montserrat", sans-serif;
     position: relative;
-  }
-
-  .btn-container {
-    display: flex;
-    justify-content: center;
-    .btn {
-      background-color: #abb557;
-      color: whitesmoke;
-      border: none;
-      display: flex;
-      justify-content: center;
-
-      a {
-        text-decoration: none;
-        color: white;
-      }
-
-      & a:hover {
-        background-color: white;
-        color: #abb557;
-      }
-      &:hover {
-        background-color: white;
-        color: #abb557;
-      }
-    }
   }
 
   .surfService {
@@ -262,6 +238,14 @@ main {
     .surfService {
       height: 400px;
       width: 30%;
+    }
+  }
+  .banner {
+    height: 550px;
+    img {
+      height: 480px;
+      width: 100%;
+      object-fit: cover;
     }
   }
 }
