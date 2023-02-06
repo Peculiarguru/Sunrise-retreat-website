@@ -1,64 +1,63 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Chivo+Mono&family=Fira+Sans+Condensed:wght@100&family=Itim&family=Jura&family=Lato:wght@300&family=Lobster&family=Maven+Pro&family=Monoton&family=Montserrat&family=Montserrat+Alternates&family=Pacifico&family=Poller+One&family=Poppins:wght@300;400&family=Roboto+Condensed&family=Roboto+Slab:wght@500&family=Roboto:ital,wght@0,500;1,400&family=Rubik+Gemstones&family=Rubik+Spray+Paint&display=swap");
 .surfContainer {
   font-family: "Montserrat Alternates", sans-serif;
 
-
-* {
-  font-family: "Montserrat", sans-serif;
-}
-
-.surfContainer {
-
-  .big-font {
-    font-size: 17px;
-  }
-  .center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    margin-bottom: 200px;
-    margin-top: 100px;
-    border-radius: 10px;
-    transition: 30ms;
+  * {
+    font-family: "Montserrat", sans-serif;
   }
 
-  h3 {
-    text-align: center;
-    margin-top: 100px;
-    font-weight: bold;
-    font-size: 50px;
+  .surfContainer {
+    .big-font {
+      font-size: 17px;
+    }
+    .center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      margin-bottom: 200px;
+      margin-top: 100px;
+      border-radius: 10px;
+      transition: 30ms;
+    }
+
+    h3 {
+      text-align: center;
+      margin-top: 100px;
+      font-weight: bold;
+      font-size: 50px;
+    }
+
+    .surf-gallery-container {
+      .grid-style1 {
+        background-image: url(../images/food13.jpg);
+      }
+
+      .grid-style2 {
+        background-image: url(../images/food15.jpg);
+      }
+
+      .grid-style3 {
+        background-image: url(../images/food6.jpg);
+      }
+
+      .grid-style4 {
+        background-image: url(../images/food9.jpg);
+      }
+
+      .grid-style5 {
+        background-image: url(../images/food10.jpg);
+      }
+
+      .grid-style6 {
+        background-image: url(../images/food12.jpg);
+      }
+    }
   }
 
-  .surf-gallery-container {
-    .grid-style1 {
-      background-image: url(/src/images/surferImg/surfer_sun1.webp);
+  @media (max-width: 375px) {
+    .import {
+      text-align: start;
     }
-
-    .grid-style2 {
-      background-image: url(/src/images/surferImg/surf_sun2.jpg);
-    }
-
-    .grid-style3 {
-      background-image: url(/src/images/surferImg/surf_sun4.jpg);
-    }
-
-    .grid-style4 {
-      background-image: url(/src/images/surferImg/surfe_sun3.jpg.crdownload);
-    }
-
-    .grid-style5 {
-      background-image: url(/src/images/surferImg/surfe_sun5.jpg);
-    }
-
-    .grid-style6 {
-      background-image: url(/src/images/surferImg/surf_sun6.jpg);
-    }
-  }
-}
-@media (max-width: 375px) {
-  .import {
-    text-align: start;
   }
 }
