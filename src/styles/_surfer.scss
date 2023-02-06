@@ -1,17 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Chivo+Mono&family=Fira+Sans+Condensed:wght@100&family=Itim&family=Jura&family=Lato:wght@300&family=Lobster&family=Maven+Pro&family=Monoton&family=Pacifico&family=Poller+One&family=Poppins:wght@300;400&family=Roboto+Condensed&family=Roboto+Slab:wght@500&family=Roboto:ital,wght@0,500;1,400&family=Rubik+Gemstones&family=Rubik+Spray+Paint&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Chivo+Mono&family=Fira+Sans+Condensed:wght@100&family=Itim&family=Jura&family=Lato:wght@300&family=Lobster&family=Maven+Pro&family=Monoton&family=Montserrat&family=Montserrat+Alternates&family=Pacifico&family=Poller+One&family=Poppins:wght@300;400&family=Roboto+Condensed&family=Roboto+Slab:wght@500&family=Roboto:ital,wght@0,500;1,400&family=Rubik+Gemstones&family=Rubik+Spray+Paint&display=swap");
 .surfContainer {
-  font-family: "Itim", cursive;
+  font-family: "Montserrat Alternates", sans-serif;
 
   .big-font {
-    font-size: 23px;
+    font-size: 18px;
   }
   .center {
     display: flex;
     justify-content: center;
     align-items: center;
 
-    margin-bottom: 300px;
+    margin-bottom: 200px;
     margin-top: 100px;
     border-radius: 10px;
     transition: 30ms;
