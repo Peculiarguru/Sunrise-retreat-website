@@ -1,3 +1,7 @@
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
 @mixin backgroundStyle {
   background-position: center;
   background-repeat: no-repeat;
@@ -26,7 +30,7 @@ $textColor: #abb557;
 @mixin animationStyle {
   .animation {
     animation: text-animation 8s infinite;
-    font-family: "Montserrat", sans-serif;
+
     padding-top: 10px;
   }
   .first {
