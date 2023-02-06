@@ -1,0 +1,28 @@
+* {
+  font-family: "Montserrat", sans-serif;
+}
+.btn-container {
+  display: flex;
+  justify-content: center;
+  a,
+  button {
+    text-decoration: none;
+    color: whitesmoke;
+    background-color: #abb557;
+    width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+
+    &:hover {
+      background-color: white;
+      color: #abb557;
+    }
+  }
+}
+
+a {
+  color: white;
+}

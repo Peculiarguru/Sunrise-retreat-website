@@ -1,29 +1,23 @@
+* {
+  font-family: "Montserrat", sans-serif;
+}
 footer {
+
   @mixin formStyle {
     width: 100%;
     margin-bottom: 20px;
     padding: 8px;
     border: 1px solid #ccc;
-    border-radius: 3px;
   }
   @mixin buttonStyle {
     color: whitesmoke;
     border: none;
-
-    a {
-      text-decoration: none;
-      color: white;
-    }
-    .btn a:hover {
-      background-color: white;
-      color: $textColor;
-    }
+    border-radius: 10px;
   }
 
   .footer-content-container {
     background-color: #8a8a8a;
-    padding: 20px;
-    height: auto;
+    margin-top: 20px;
     color: white;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
       sans-serif;
@@ -31,12 +25,15 @@ footer {
     font-size: 1rem;
   }
 
+
   a {
     text-decoration: none;
     color: white;
     transition: transform 2s ease-in-out;
     padding: 2px;
   }
+
+
 
   .input-group {
     display: flex;
@@ -49,10 +46,35 @@ footer {
   .btn {
     @include buttonStyle;
   }
+
   span:hover,
   a:hover,
   i:hover {
     color: whitesmoke;
     transform: scale(1.3);
+
+  .contact-container {
+    span:hover,
+    i:hover {
+      color: #abb557;
+    }
+
   }
+}
+@media screen and (max-width: 425px) {
+  .explore {
+      display: none;
+      
+    }
+    .footer-content-container{
+      height: 560px;
+     /*  font-size: 0.8rem; */
+    }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-content-container {
+    height: 340px;
+  }
+
 }

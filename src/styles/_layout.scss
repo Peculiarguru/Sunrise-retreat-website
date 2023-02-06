@@ -1,8 +1,18 @@
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
 @mixin backgroundStyle {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: white;
+  width: 100%;
+  height: 280px;
+  text-align: center;
+  color: #fff;
 }
+
 @mixin flexColumnCenter {
   display: flex;
   justify-content: center;
@@ -14,10 +24,7 @@
   justify-content: center;
   align-items: center;
 }
-@mixin link {
-  text-decoration: none;
-  color: #abb557;
-}
+
 @mixin grid-style {
   display: grid;
   grid-template-columns: repeat(2, 300px);
@@ -29,13 +36,14 @@ $textColor: #abb557;
 @mixin animationStyle {
   .animation {
     animation: text-animation 8s infinite;
-    font-family: "Montserrat", sans-serif;
+
+    padding-top: 10px;
   }
   .first {
     background-color: chocolate;
   }
   .second {
-    background-color: #abb557;
+    background-color: $textColor;
   }
   .third {
     background-color: rgb(244, 181, 135);
@@ -49,39 +57,40 @@ $textColor: #abb557;
       margin-top: 0;
     }
     20% {
-      margin-top: -66px;
+      margin-top: -80px;
     }
     30% {
-      margin-top: -66px;
+      margin-top: -80px;
     }
     40% {
-      margin-top: -132px;
+      margin-top: -146px;
     }
     60% {
-      margin-top: -132px;
+      margin-top: -146px;
     }
     70% {
-      margin-top: -66px;
+      margin-top: -80px;
     }
     80% {
-      margin-top: -66px;
+      margin-top: -80px;
     }
     90% {
-      margin-top: 0;
+      margin-top: -10px;
     }
     100% {
-      margin-top: 0;
+      margin-top: -10px;
     }
   }
 }
 
 main {
   margin-top: 20px;
+  width: 100%;
   .booking {
     height: 50px;
     border: none;
     color: #fff;
-    background: #abb557;
+    background: $textColor;
     cursor: pointer;
   }
   .banner {
@@ -91,30 +100,43 @@ main {
     background-color: #f1f4db;
     padding-bottom: 30px;
   }
-  .reserveBooking {
+  .our-package {
     @include flexRowCenter();
-    height: 50px;
     overflow: hidden;
     margin: 50px;
+
     .animationContainer {
       height: 50px;
+      overflow: hidden;
       .animation {
-        overflow: hidden;
         margin-left: 20px;
         height: 500px;
+
         h4 {
-          font-size: 1rem;
+          font-size: 1.1rem;
+        }
+        .center-text {
+          padding-top: 10px;
         }
       }
       .animation > div > div {
         margin-bottom: 1rem;
         height: 50px;
-        width: 200px;
+        width: 250px;
         color: white;
-        font-size: 1.3rem;
+
         @include flexColumnCenter();
       }
       @include animationStyle;
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    .reserveBooking {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
   }
 
@@ -128,62 +150,97 @@ main {
     position: relative;
   }
 
-  .btn {
-    background-color: #abb557;
-    color: whitesmoke;
-    border: none;
-
-    a {
-      text-decoration: none;
-      color: white;
-    }
-  }
-
-  .btn a:hover {
-    background-color: white;
-    color: $textColor;
-  }
   .surfService {
-    background-image: url(../images/servicebg3.jpg);
+    background-image: linear-gradient(
+        180deg,
+        rgba(#d3763391, 0.212),
+        rgba(#8d461491, 0.212)
+      ),
+      url("../images/servicebg3.jpg");
     @include backgroundStyle;
+  }
+  .surfService:hover {
+    background-image: linear-gradient(
+        180deg,
+        rgba(#b85b1a91, 0.473),
+        rgba(#52290c91, 0.473)
+      ),
+      url("../images/servicebg3.jpg");
   }
   .yogaService {
     background-image: url(../images/yoga2.jpg);
     @include backgroundStyle;
+    background-image: linear-gradient(
+        180deg,
+        rgba(#d3763391, 0.212),
+        rgba(#8d461491, 0.212)
+      ),
+      url("../images/yoga2.jpg");
+  }
+  .yogaService:hover {
+    background-image: linear-gradient(
+        180deg,
+        rgba(#b85b1a91, 0.473),
+        rgba(#52290c91, 0.473)
+      ),
+      url("../images/yoga2.jpg");
   }
   .foodService {
     background-image: url(../images/servicebg2.jpg);
+    background-image: linear-gradient(
+        180deg,
+        rgba(#d3763391, 0.212),
+        rgba(#8d461491, 0.212)
+      ),
+      url("../images/servicebg2.jpg");
     @include backgroundStyle;
+  }
+  .foodService:hover {
+    background-image: linear-gradient(
+        180deg,
+        rgba(#b85b1a91, 0.473),
+        rgba(#52290c91, 0.473)
+      ),
+      url("../images/servicebg2.jpg");
   }
 
   // style for testimonials
   .testimonies {
     .demo {
-      background: linear-gradient(112deg, #ffffff 50%, #eef3c0 50%);
-      max-width: 900px;
+      max-width: 70%;
       margin: auto;
+    }
+    .carousel-indicators button {
+      background-color: #abb557;
     }
     .carousel-caption {
       position: initial;
       z-index: 10;
-      padding: 5rem 8rem;
+      padding: 2rem;
       color: rgba(78, 77, 77, 0.856);
       text-align: center;
-      font-size: 1.2rem;
+      font-size: 1rem;
       font-style: italic;
-      font-weight: bold;
-      line-height: 2rem;
+      line-height: 1.6rem;
     }
 
     .carousel-caption img {
-      width: 6rem;
-      border-radius: 5rem;
-      margin-top: 2rem;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-top: 1rem;
     }
     @media (max-width: 767px) {
+      .testimonies {
+        .demo {
+          max-width: 85%;
+          margin: auto;
+        }
+      }
       .carousel-caption img {
-        width: 4rem;
-        border-radius: 4rem;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
         margin-top: 1rem;
       }
       #image-caption {
@@ -194,58 +251,72 @@ main {
       .carousel-caption {
         position: initial;
         z-index: 10;
-        padding: 3rem 2rem;
         color: rgba(78, 77, 77, 0.856);
         text-align: center;
-        font-size: 0.7rem;
+        font-size: 0.6rem;
         font-style: italic;
         font-weight: bold;
-        line-height: 1.5rem;
+        line-height: 1.3rem;
+        margin-bottom: 20px;
+        padding: 20px;
       }
     }
     #image-caption {
       font-style: normal;
-      font-size: 1rem;
+      font-size: 0.8rem;
       margin-top: 0.5rem;
     }
   }
-  // end of style for testimonials
-}
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .whatWeDo {
-    width: 70%;
-    margin: 0 auto;
-    @include grid-style;
-
-    .surfService {
-      grid-area: surfService;
-    }
-    .yogaService {
-      grid-area: yogaService;
-      margin-bottom: 0 !important;
-    }
-    .foodService {
-      grid-area: foodService;
+  @media screen and (max-width: 768px) {
+    .our-package {
+      @include flexColumnCenter();
     }
   }
 
-  .img-fluid {
-    height: 100%;
-    object-fit: cover;
-    width: 100%;
-  }
-}
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    .whatWeDo {
+      width: 70%;
+      margin: 0 auto;
+      @include grid-style;
 
-@media screen and (min-width: 1024px) {
-  .whatWeDo {
-    display: flex;
-    justify-content: space-around;
-    .foodService,
-    .yogaService,
-    .surfService {
-      height: 400px;
-      width: 30%;
+      .surfService {
+        grid-area: surfService;
+      }
+      .yogaService {
+        grid-area: yogaService;
+        margin-bottom: 0 !important;
+      }
+      .foodService {
+        grid-area: foodService;
+      }
+    }
+
+    .img-fluid {
+      height: 100%;
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    .whatWeDo {
+      display: flex;
+      justify-content: space-around;
+      .foodService,
+      .yogaService,
+      .surfService {
+        height: 400px;
+        width: 30%;
+      }
+    }
+    .banner {
+      height: 550px;
+      img {
+        height: 480px;
+        width: 100%;
+        object-fit: cover;
+      }
     }
   }
 }
