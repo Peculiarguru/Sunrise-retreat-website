@@ -8,16 +8,18 @@
   background-color: rgba(210, 105, 30, 0.568);
   .nav-link {
     color: whitesmoke;
-   
+
     .nav-item {
       margin-left: 20px;
+    }
+    &:hover {
+      border-bottom: 2px solid #abb557;
     }
   }
   .logo {
     img {
       margin-right: 20px;
     }
-    
   }
   .navbar-toggler-icon {
     width: 20px;
@@ -58,7 +60,7 @@ header {
     font-size: 1.6rem;
   }
 }
-@media screen and (min-width:426px) and (max-width: 1023px) {
+@media screen and (min-width: 426px) and (max-width: 1023px) {
   .nav-item {
     font-size: 0.8rem;
   }
