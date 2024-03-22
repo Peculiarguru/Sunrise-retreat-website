@@ -12,13 +12,22 @@ The primary goal of the Sunrise React project was to provide students with pract
 - **SCSS Styling**: SCSS is used for styling, allowing for modularity and maintainability in the project's CSS codebase.
 - **Bootstrap Framework**: Bootstrap is utilized for rapid prototyping and responsive design, ensuring compatibility across various devices and screen sizes.
 
+  ## Technologies Used
+- [Parcel](https://parceljs.org/)
+- [Sass](https://sass-lang.com/)
+- [Bootstrap](https://getbootstrap.com/)
+
+
+
+## Demo
+
+[Live Demo](https://peculiarguru.github.io/Sunrise-retreat-website/index.html)
+
+![home](src/images/screenshot.png)
+
 
 ## Contributors
 
   - [Contributor 1 GitHub Profile](https://github.com/sfmfazan)
   - [Contributor 2 GitHub Profile](https://github.com/statuja)
  
-
-## View Website
-
-You can view the website online [here](https://peculiarguru.github.io/Sunrise-retreat-website/index.html).
