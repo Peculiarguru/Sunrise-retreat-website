@@ -1,6 +1,6 @@
 # Sunrise React
 
-Sunrise React is a collaborative project undertaken during our bootcamp's user interface module. It served as an opportunity for students to gain hands-on experience in working with teams and utilizing GitHub for collaborative development. The project was inspired by a resort in Sri Lanka, and we used HTML, SCSS, and Bootstrap for its implementation.
+Sunrise Retreat is a collaborative project undertaken during our bootcamp's user interface module. It served as an opportunity for students to gain hands-on experience in working with teams and utilizing GitHub for collaborative development. The project was inspired by a resort in Sri Lanka, and we used HTML, SCSS, and Bootstrap for its implementation.
 
 ## Purpose
 
